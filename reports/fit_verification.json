@@ -12,11 +12,11 @@
   "held_out_labels_present": false,
   "intercept_fit_budget_observed": 2,
   "model_fit_budget_observed": 4,
-  "note": "Initial byte-exact inference assertion failed; original sealed predictions preserved. Saved-model inference is checked numerically without refitting or changing selection.",
+  "note": "The initial byte assertion serialized columns in JSON-sorted family order. Restoring the original loan_id/logit/hgb CSV column order reproduces both sealed files byte for byte; probabilities were identical throughout. No model, prediction or selection changed.",
   "numeric_acceptance_absolute_tolerance": 1e-14,
   "saved_model_prediction_reproduction": {
     "2018": {
-      "byte_identical": false,
+      "byte_identical": true,
       "max_absolute_probability_error": {
         "hgb": 0.0,
         "logit": 0.0
@@ -25,7 +25,7 @@
       "within_tolerance": true
     },
     "2021": {
-      "byte_identical": false,
+      "byte_identical": true,
       "max_absolute_probability_error": {
         "hgb": 0.0,
         "logit": 0.0

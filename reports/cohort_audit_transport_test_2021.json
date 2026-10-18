@@ -1,0 +1,32 @@
+{
+  "all_eligible_event_rate_bounds": [
+    0.005932349641901803,
+    0.006061782724997843
+  ],
+  "as_of": 202212,
+  "eligible_loans": 46356,
+  "event_rate_among_known": 0.005933117583603021,
+  "excluded_from_origination_count": 3644,
+  "feature_missing_counts": {
+    "dti": 8,
+    "fico": 7
+  },
+  "history_start": 202207,
+  "interpretation": "Latest-release retrospective snapshot; no historical-release availability claim. Censoring bounds are identification bounds, not confidence intervals.",
+  "known_outcomes": 46350,
+  "label_end": 202312,
+  "label_start": 202301,
+  "loans_observed_at_landmark": 46600,
+  "origination_loans": 50000,
+  "outcome_counts": {
+    "observed_event_free_12m": 44230,
+    "reported_credit_distress": 275,
+    "transfer_or_defect_censored": 6,
+    "voluntary_payoff_competing": 1845
+  },
+  "positive_outcomes": 275,
+  "private_table_sha256": "b3713a5668f9f1afd8e7055e70a1d49e528cf9a851e20b175e22aec936f165a4",
+  "role": "transport_test",
+  "unresolved_outcomes": 6,
+  "year": 2021
+}

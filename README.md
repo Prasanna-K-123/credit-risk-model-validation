@@ -1,46 +1,84 @@
-# Credit Risk and Model Validation Under Economic Stress
+# Credit risk and model validation under economic stress
 
-A retrospective mortgage-monitoring study: when does good risk ranking stop
-producing reliable probabilities and useful review decisions?
+**A better held-out score did not make the probabilities safe to use.**
 
-**Current status:** data engineering checkpoint. The 2012 source sample and its
-training-cohort construction are audited. The six-vintage study protocol is fixed;
-five source files, model fitting and held-out evaluation remain pending. There
-are no model-performance or financial-impact claims yet.
+A six-vintage Freddie Mac mortgage study by Prasanna K, M.A. Actuarial Economics,
+Madras School of Economics. Audited 300,000 loans and 20,151,667 monthly records;
+constructed chronological SQL snapshots and explicitly censored 12-month labels;
+compared fixed logistic and histogram-boosting models with bounded adaptation.
 
-- [Analysis protocol](docs/PROTOCOL.md)
-- [Data provenance and limitations](docs/DATA.md)
-- [Source audit](reports/data_audit_2012.json)
-- [Training-cohort audit](reports/cohort_audit_train_2012.json)
+On the primary 2020 stress test, selected boosting improves Brier by 0.000711822
+against selected logistic (paired 95% interval for HGB − logistic:
+[−0.000919710, −0.000515400]). Yet observed events are **6.155 and 8.324 times
+predicted** respectively. The memo restricts both models to historical research
+and ranking diagnostics, rejecting unchanged probabilities for operational loss
+or capital use. The separate 2023 transport check preserves the same models.
 
-## Reproduce the available data checkpoint
+The validation-based recommendation remains unchanged logistic under the fixed
+0.0001 simplicity tolerance. Neither model is reselected using test results.
 
-Before fitting, run the source-input gate against the downloaded ZIP directory:
+- [Technical report](reports/TECHNICAL_REPORT.md)
+- [Decision memo](reports/DECISION_MEMO.md)
+- [Frozen protocol](docs/PROTOCOL.md) and [implementation details](docs/IMPLEMENTATION.md)
+- [Final aggregate evidence](reports/final_evaluation.json)
+- [Selection/prediction seal](reports/selection.json)
+- [Data and use restrictions](docs/DATA.md)
+- [Evaluation metadata repair](docs/EVALUATION_REPAIR.md)
+
+## Reproduce
+
+Use the exact packages in `requirements.txt`. The scientific comparison uses four
+unique full model fits and two intercept-only adaptation updates, with no search.
+Test predictions are sealed before evaluation.
+
+Obtain permitted personal noncommercial access through the [official Freddie Mac
+dataset page](https://www.freddiemac.com/research/datasets/sf-loanlevel-dataset).
+Review its current terms. Acquire Release 47 samples for 2012, 2013, 2015, 2016,
+2018 and 2021. Place them in `data/raw/sample_YEAR.zip`. Required hashes appear
+in `source_intake/reports/intake_summary.json`; changed bytes fail ingestion.
+No protected download is automated here. From the repository root:
 
 ```bash
-python scripts/check_data_ready.py --source-dir /path/to/downloads
-```
-
-Exit code 2 identifies missing, unaudited or changed sources and blocks progress
-to fitting. A pass still requires the protocol's separate cross-cohort checks.
-
-Python 3.12.14; this stage uses the standard library only (SQLite 3.53.1 in the
-recorded environment). Obtain the official ZIP under Freddie Mac's terms.
-The audited source checksum is enforced by the importer.
-
-```bash
-python scripts/ingest_audit.py --zip /path/to/sample_2012.zip --year 2012
+python -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements.txt
 PYTHONPATH=src python -m unittest discover -s tests -v
-python scripts/build_cohort.py --year 2012 --as-of 201312 --role train
+python scripts/prepare_all_stores.py
+python scripts/check_data_ready.py --source-dir data/raw --report reports/source_readiness.json
+python scripts/prepare_study.py
+OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=1 python scripts/fit_and_seal.py
+OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=1 python scripts/evaluate_release.py
+python scripts/build_reports.py
+python scripts/build_demo.py
+python scripts/verify_results.py
 ```
 
-The importer reads the ZIP without extraction, checks every row, and writes a
-local SQLite store. The SQL query restricts features to the snapshot and the
-preceding five months. The separate label function distinguishes reported credit
-distress, voluntary payoff, transfers and incomplete observation. Tests challenge
-future-data leakage, calendar boundaries and misleading negative labels.
+This checks hashes, CRCs, schema, key relationships, source gaps, SQL integrity
+and supplied cross-cohort links. The original 2012 CSV must reproduce exactly.
+Preparation builds four labeled fitting/validation cohorts and two label-free
+test snapshots. Preserve the supplied pre-fit manifest; `fit_and_seal.py` checks
+every original method hash and refuses an existing started-fit marker. Use a
+clean working copy for reproduction; it repeats the same candidates, not search.
+Run-seal dates differ between reproductions and are excluded from scientific
+comparisons. `evaluate_release.py` differs from the retained original evaluator
+by one documented audit-metadata key repair; no model or scoring rule changed.
 
-Raw data, loan IDs, private feature tables and SQLite files remain under ignored
-local paths. Public outputs will contain aggregate research results only. The
-study concerns already-originated US mortgages; it is not an Indian lending,
-IFRS 9 compliance or live investment system.
+Open `docs/index.html` for the self-contained aggregate explorer. Capacity,
+assumed severity and review cost select saved aggregates or arithmetic scenarios.
+No individual lending decision or causal avoided-loss estimate occurs. Public
+hosting and a tagged release await approved publication and live browser QA.
+
+## Private artifacts and interpretation
+
+Raw rows, identifiers, SQL stores, feature/label tables, fitted models and
+individual predictions are ignored by Git. Research evidence contains aggregates
+and hashes only. The original `SOURCE_MANIFEST.json` describes the received
+checkpoint, not the completed tree. `study.json`'s pre-fit flag is historical
+protocol metadata; current run state appears under `reports/`.
+
+These are originated US mortgages in a later-revised July 2026 release. SQL
+cutoffs do not establish immutable contemporary release availability. The target
+is reported distress before payoff, not regulatory default or realized loss.
+Unresolved outcomes receive bounds. Hidden borrower/common-shock dependence can
+weaken loan-bootstrap intervals. Broad-group diagnostics do not establish fairness.
+Indian portability, IFRS 9 compliance and intervention effects are not established.
