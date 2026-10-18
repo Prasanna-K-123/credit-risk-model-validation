@@ -1,0 +1,32 @@
+{
+  "all_eligible_event_rate_bounds": [
+    0.0036675085099374108,
+    0.0037553530251454924
+  ],
+  "as_of": 201412,
+  "eligible_loans": 45535,
+  "event_rate_among_known": 0.003667830708747886,
+  "excluded_from_origination_count": 4465,
+  "feature_missing_counts": {
+    "dti": 13678,
+    "fico": 1
+  },
+  "history_start": 201407,
+  "interpretation": "Latest-release retrospective snapshot; no historical-release availability claim. Censoring bounds are identification bounds, not confidence intervals.",
+  "known_outcomes": 45531,
+  "label_end": 201512,
+  "label_start": 201501,
+  "loans_observed_at_landmark": 46279,
+  "origination_loans": 50000,
+  "outcome_counts": {
+    "observed_event_free_12m": 41050,
+    "reported_credit_distress": 167,
+    "transfer_or_defect_censored": 4,
+    "voluntary_payoff_competing": 4314
+  },
+  "positive_outcomes": 167,
+  "private_table_sha256": "63c02f35bee166d5a727800050073ed9263dd754cb7781b84c048388123b8ce8",
+  "role": "train",
+  "unresolved_outcomes": 4,
+  "year": 2013
+}

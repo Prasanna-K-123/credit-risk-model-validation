@@ -1,8 +1,10 @@
-__pycache__/
-.env*
 data/
+artifacts/
+__pycache__/
+*.pyc
+.venv/
 *.zip
 *.sqlite*
-*.parquet
-*.joblib
-private_*/
+private_logs/
+.env*
+*.sqlite*

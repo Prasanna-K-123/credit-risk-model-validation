@@ -1,0 +1,38 @@
+{
+  "source_gate_passed": true,
+  "required": 6,
+  "verified": 6,
+  "files": [
+    {
+      "year": 2012,
+      "filename": "sample_2012.zip",
+      "status": "verified"
+    },
+    {
+      "year": 2013,
+      "filename": "sample_2013.zip",
+      "status": "verified"
+    },
+    {
+      "year": 2015,
+      "filename": "sample_2015.zip",
+      "status": "verified"
+    },
+    {
+      "year": 2016,
+      "filename": "sample_2016.zip",
+      "status": "verified"
+    },
+    {
+      "year": 2018,
+      "filename": "sample_2018.zip",
+      "status": "verified"
+    },
+    {
+      "year": 2021,
+      "filename": "sample_2021.zip",
+      "status": "verified"
+    }
+  ],
+  "scope": "Source availability and audit/hash agreement only; cross-cohort validation remains required."
+}

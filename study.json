@@ -1,0 +1,23 @@
+{
+  "protocol_version": 1,
+  "frozen_on": "2026-10-16",
+  "seed": 20261016,
+  "source_release": 47,
+  "performance_cutoff": 202603,
+  "cohorts": [
+    {"year": 2012, "as_of": 201312, "role": "train"},
+    {"year": 2013, "as_of": 201412, "role": "train"},
+    {"year": 2015, "as_of": 201612, "role": "adaptation"},
+    {"year": 2016, "as_of": 201712, "role": "validation"},
+    {"year": 2018, "as_of": 201912, "role": "stress_test"},
+    {"year": 2021, "as_of": 202212, "role": "transport_test"}
+  ],
+  "primary_metric": "brier_score",
+  "paired_bootstrap_replicates": 2000,
+  "review_capacities": [0.01, 0.05, 0.10],
+  "maximum_unresolved_fraction_for_unconditional_approval": 0.02,
+  "full_model_fit_budget": 4,
+  "intercept_recalibration_fit_budget": 2,
+  "hyperparameter_search": false,
+  "model_fitting_started": false
+}
