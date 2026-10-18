@@ -1,0 +1,59 @@
+{
+  "full_fits": 4,
+  "intercept_fits": 2,
+  "intercept_updates": {
+    "hgb": {
+      "delta": 0.7966748219167535,
+      "mean_score_residual": -2.0680320846142435e-20
+    },
+    "logit": {
+      "delta": 0.7350277713799833,
+      "mean_score_residual": 3.9292609607670626e-19
+    }
+  },
+  "known_fit_rows": {
+    "adaptation": 42948,
+    "training": 90653,
+    "validation": 45399
+  },
+  "models": {
+    "hgb_retrained.joblib": "480e92cf4c4c8dcd59dc3148a524f0df4575a022ce24b07c0962641e9aa457eb",
+    "hgb_unchanged.joblib": "aa0b1710774c73ed9c2ebde1e57eda9f06472d3478f4f469efe18891a7ee7fa0",
+    "logit_retrained.joblib": "0d38325d9b15d6aae19b8cb6d24e74fb9b6c54c5beba43bce8b6aef6244029ce",
+    "logit_unchanged.joblib": "6e9d00388965890b040e7e4d72bed48e52c6945fc4c1c12da0464fca390f5fe6"
+  },
+  "prefit_manifest_sha256": "090278b2c92e8fb7c047f2779c5d27ceb676de840c49c70077e70b53d45db194",
+  "preparation_sha256": "dc54e46a1e4e4bd373eaefe3eea4dd5cf970f75cd0959ce695fcf80b1fdf5a91",
+  "protocol_sha256": "f3a82891499768e47aa39e7506876210749f03f624a6f756a7f2d8a4bb0d02cb",
+  "recommended_family_from_validation": "logit",
+  "sealed_utc": "2026-10-18T10:04:50.406272+00:00",
+  "selected_variants": {
+    "hgb": "retrained",
+    "logit": "unchanged"
+  },
+  "test_outcomes_accessed": false,
+  "test_prediction_files": {
+    "2018": {
+      "rows": 40066,
+      "sha256": "b39705d45486ed262dcdf46a303f09ab72b51dbfd11fe02f82a1f8668f4a512d",
+      "snapshot_sha256": "f7fc56dc4950d9461453736bd99c31ea71ccd40fb215002a50b9881c1bbe958d"
+    },
+    "2021": {
+      "rows": 46356,
+      "sha256": "0908ef8a20134f8f0d4a25660a48a3c3e38f7eaa4ba271221631117fb6957728",
+      "snapshot_sha256": "ff54677dd4eb01ede0b43231c637187024c3df38b2d8e7aec99cf11e00d2fc33"
+    }
+  },
+  "validation_brier": {
+    "hgb": {
+      "recalibrated": 0.0037263564038250135,
+      "retrained": 0.0034885860670454175,
+      "unchanged": 0.0035509644772004504
+    },
+    "logit": {
+      "recalibrated": 0.003549959133891271,
+      "retrained": 0.0035165215461546136,
+      "unchanged": 0.003508142757819682
+    }
+  }
+}
