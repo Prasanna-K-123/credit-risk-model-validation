@@ -17,6 +17,7 @@ or capital use. The separate 2023 transport check preserves the same models.
 The validation-based recommendation remains unchanged logistic under the fixed
 0.0001 simplicity tolerance. Neither model is reselected using test results.
 
+- [Live aggregate explorer](https://prasanna-k-123.github.io/credit-risk-model-validation/)
 - [Technical report](reports/TECHNICAL_REPORT.md)
 - [Decision memo](reports/DECISION_MEMO.md)
 - [Frozen protocol](docs/PROTOCOL.md) and [implementation details](docs/IMPLEMENTATION.md)
@@ -65,8 +66,11 @@ by one documented audit-metadata key repair; no model or scoring rule changed.
 
 Open `docs/index.html` for the self-contained aggregate explorer. Capacity,
 assumed severity and review cost select saved aggregates or arithmetic scenarios.
-No individual lending decision or causal avoided-loss estimate occurs. Public
-hosting and a tagged release await approved publication and live browser QA.
+No individual lending decision or causal avoided-loss estimate occurs. The public
+explorer has been checked across all 12 cohort/model/capacity views, keyboard
+controls, three report links and desktop/375px/320px iframe widths. These are
+browser CSS checks, not phone OS or touch-input certification. See the
+[recorded browser verification](reports/browser_verification.json).
 
 ## Private artifacts and interpretation
 
