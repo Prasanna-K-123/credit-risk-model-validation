@@ -1,0 +1,8 @@
+__pycache__/
+.env*
+data/
+*.zip
+*.sqlite*
+*.parquet
+*.joblib
+private_*/

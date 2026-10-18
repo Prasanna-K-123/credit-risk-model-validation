@@ -1,0 +1,38 @@
+{
+  "gate": "P1 A",
+  "accepted": true,
+  "date": "2026-10-18",
+  "archives": 6,
+  "loans": 300000,
+  "loan_months": 20151667,
+  "source_integrity": "All 12 members completely read for CRC and SHA256. All source rows match the known Release 47 31/35-field layout. No duplicate loan/month keys, unmatched identifiers or missing performance histories. 2012 ZIP and both members match the earlier saved snapshot.",
+  "known_source_quality_exception": {
+    "year": 2015,
+    "loans": 2,
+    "missing_months": 3,
+    "raw_bytes_altered": false,
+    "zero_gap_flag_preserved_as_false": true,
+    "treatment_required_by_existing_frozen_protocol": [
+      "Missing December 2016 snapshot prevents eligibility for that loan.",
+      "June/July 2017 outcome gap is unresolved unless an observed positive exists under the frozen definition."
+    ]
+  },
+  "tests": {
+    "offline_boundary_tests": 3,
+    "passed": 3,
+    "scope": "Calendar boundary, duplicate/gap/orphan detection, changed-schema rejection; not restored old cohort-builder tests."
+  },
+  "source_use": {
+    "purpose": "Personal noncommercial academic credit-performance research",
+    "dataset": "https://www.freddiemac.com/research/datasets/sf-loanlevel-dataset",
+    "terms": "https://capitalmarkets.freddiemac.com/crt/docs/pdfs/fre_terms_conditions_sflld.pdf",
+    "raw_redistribution": false,
+    "external_reidentification": false
+  },
+  "not_claimed": [
+    "Model training or final model evaluation",
+    "Cross-cohort/pre-HARP leakage exclusions implemented",
+    "Restoration of earlier 18-file P1 source snapshot",
+    "Public release"
+  ]
+}

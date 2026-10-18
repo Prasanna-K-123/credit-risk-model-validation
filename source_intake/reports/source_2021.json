@@ -1,0 +1,53 @@
+{
+  "audit_script_sha256": "c4c61cee8013f8ea7a0e9febe626bc8213cdcb9c7dc85926dee25283dca064de",
+  "audited_utc": "2026-10-18T06:10:15.892953+00:00",
+  "members": {
+    "orig": {
+      "bytes": 6295995,
+      "crc_verified_by_complete_read": true,
+      "duplicate_loan_keys": 0,
+      "field_count_rows": {
+        "31": 50000
+      },
+      "invalid_year_or_identifier": 0,
+      "name": "sample_orig_2021.txt",
+      "origination_quarter_counts_from_loan_identifier": {
+        "1": 12500,
+        "2": 12500,
+        "3": 12500,
+        "4": 12500
+      },
+      "rows": 50000,
+      "sha256": "2c73c485e05be5572a8f3c957e0a49dc5b6c2ee210177f0f4b5a3eff76a85512",
+      "unique_loans": 50000
+    },
+    "perf": {
+      "bytes": 292379969,
+      "crc_verified_by_complete_read": true,
+      "duplicate_loan_months": 0,
+      "field_count_rows": {
+        "35": 2537054
+      },
+      "loans_with_internal_calendar_gaps": 0,
+      "missing_internal_calendar_months": 0,
+      "name": "sample_perf_2021.txt",
+      "non_increasing_source_order_rows_within_loan": 0,
+      "observations_per_loan_max": 63,
+      "observations_per_loan_min": 1,
+      "origination_loans_without_performance": 0,
+      "reporting_month_max": 202603,
+      "reporting_month_min": 202101,
+      "rows": 2537054,
+      "rows_without_origination_key": 0,
+      "sha256": "c13e4258f32f4e63a49023098ad795fa789b3c4c132e367e4aa0d58c9f238145",
+      "unique_loan_months": 2537054,
+      "unique_loans": 50000
+    }
+  },
+  "scope_limit": "Source integrity only: no cohort labels, model fitting, linked-loan exclusions or held-out model evaluation.",
+  "structural_checks_pass": true,
+  "uploaded_name": "sample_2021.zip",
+  "year": 2021,
+  "zip_bytes": 41896851,
+  "zip_sha256": "38ced6b1e5ec155b51f0049fc44e4022db6cd5c98f5b559338c6791009faca9b"
+}

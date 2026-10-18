@@ -1,0 +1,21 @@
+{
+  "year": 2015,
+  "gap_runs": [
+    {
+      "previous_month": 201611,
+      "next_month": 201701,
+      "missing_months": 1,
+      "intersects_fixed_six_month_snapshot_window": true,
+      "intersects_fixed_2017_outcome_window": false
+    },
+    {
+      "previous_month": 201705,
+      "next_month": 201708,
+      "missing_months": 2,
+      "intersects_fixed_six_month_snapshot_window": false,
+      "intersects_fixed_2017_outcome_window": true
+    }
+  ],
+  "diagnosis": "Two observed source histories contain three missing calendar months; original bytes are retained. No duplicate key, orphan or CRC failure. Apply the already frozen missing-history/censoring rules when constructing cohorts; never fill these gaps with assumed current status.",
+  "scope": "Calendar-only inspection; no test outcome rates or model performance inspected."
+}

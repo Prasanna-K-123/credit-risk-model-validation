@@ -1,0 +1,35 @@
+{
+  "archives": 6,
+  "loans": 300000,
+  "loan_months": 20151667,
+  "all_structural_checks_pass": false,
+  "input_zip_bytes": 322489912,
+  "uncompressed_member_bytes": 2314008784,
+  "sources": [
+    {
+      "year": 2012,
+      "zip_sha256": "57b6b0281ee956dd1b8b4a7a24e4d3469fcbc8292fd7df981aa2a494f6a50220"
+    },
+    {
+      "year": 2013,
+      "zip_sha256": "bf80919fa702b413a485e237e87b3cd4ef822280e4bbae4851875d0d2ca33ffb"
+    },
+    {
+      "year": 2015,
+      "zip_sha256": "83cd76b9c705dd683d1490a37fb70f954c898a91a4279d09b06a7124f031c1e6"
+    },
+    {
+      "year": 2016,
+      "zip_sha256": "ecef66b69feb95aa10ee4bf8c9960bdde2711726632c309f60c0a71510af89f2"
+    },
+    {
+      "year": 2018,
+      "zip_sha256": "87e4d7ecad71ab0ad536d18fc078f51201077f602e35f49eccb7ea70cf01b2a8"
+    },
+    {
+      "year": 2021,
+      "zip_sha256": "38ced6b1e5ec155b51f0049fc44e4022db6cd5c98f5b559338c6791009faca9b"
+    }
+  ],
+  "scope_limit": "Audited source intake; no model result or full P1 completion is claimed."
+}
