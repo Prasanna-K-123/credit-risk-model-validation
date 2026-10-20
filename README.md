@@ -57,6 +57,7 @@ OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=1 python scripts/fit_and_seal.py
 OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=1 python scripts/evaluate_release.py
 python scripts/build_reports.py
 python scripts/build_demo.py
+python tools/polish_demo_layout.py
 python scripts/verify_results.py
 ```
 
