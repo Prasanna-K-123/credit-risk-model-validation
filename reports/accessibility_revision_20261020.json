@@ -4,5 +4,32 @@
   "before": "Native labels arrays empty; Chrome accessibility snapshot exposed both sliders without names. The output element inside each label was the first labelable descendant.",
   "scientific_method_hashes_unchanged": 20,
   "no_numeric_or_javascript_changes": true,
-  "live_verification_pending": true
+  "live_verification_pending": false,
+  "verified_at": "2026-10-20T14:43:02.446Z",
+  "live_verification": {
+    "labels": [
+      {
+        "id": "severity",
+        "labels": [
+          "severity"
+        ],
+        "value": "30",
+        "visualOutputsHiddenFromAccessibleName": true
+      },
+      {
+        "id": "cost",
+        "labels": [
+          "cost"
+        ],
+        "value": "25",
+        "visualOutputsHiddenFromAccessibleName": true
+      }
+    ],
+    "severityKeyboardArrowRight": {
+      "value": 31,
+      "output": "31%",
+      "conditionalUsd": 8573963
+    },
+    "resetValue": 30
+  }
 }
