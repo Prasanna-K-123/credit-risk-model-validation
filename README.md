@@ -1,5 +1,7 @@
 # Credit risk and model validation under economic stress
 
+[![Public research checks](https://github.com/Prasanna-K-123/credit-risk-model-validation/actions/workflows/verify.yml/badge.svg)](https://github.com/Prasanna-K-123/credit-risk-model-validation/actions/workflows/verify.yml)
+
 **A better held-out score did not make the probabilities safe to use.**
 
 A six-vintage Freddie Mac mortgage study by Prasanna K, M.A. Actuarial Economics,
@@ -9,8 +11,8 @@ compared fixed logistic and histogram-boosting models with bounded adaptation.
 
 On the primary 2020 stress test, selected boosting improves Brier by 0.000711822
 against selected logistic (paired 95% interval for HGB − logistic:
-[−0.000919710, −0.000515400]). Yet observed events are **6.155 and 8.324 times
-predicted** respectively. The memo restricts both models to historical research
+[−0.000919710, −0.000515400]). Yet observed events are **6.155 times predicted
+for boosting and 8.324 times for logistic**. The memo restricts both models to historical research
 and ranking diagnostics, rejecting unchanged probabilities for operational loss
 or capital use. The separate 2023 transport check preserves the same models.
 
@@ -25,6 +27,10 @@ The validation-based recommendation remains unchanged logistic under the fixed
 - [Selection/prediction seal](reports/selection.json)
 - [Data and use restrictions](docs/DATA.md)
 - [Evaluation metadata repair](docs/EVALUATION_REPAIR.md)
+
+## Automated public checks
+
+The automated checks run on public files without private data, credentials or model refitting. They run the unit tests. Raw-source model reproduction is separate.
 
 ## Reproduce
 
