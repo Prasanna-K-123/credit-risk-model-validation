@@ -30,7 +30,7 @@ The validation-based recommendation remains unchanged logistic under the fixed
 
 ## Automated public checks
 
-The automated checks run on public files without private data, credentials or model refitting. They run the unit tests. Raw-source model reproduction is separate.
+The automated checks run on public files without private data, credentials or model refitting. They run 12 cohort/model tests and three source-intake tests. The intake checks reject changed schemas and detect duplicate loan-months, internal gaps and orphan performance keys. Raw-source model reproduction is separate.
 
 ## Reproduce
 
@@ -50,6 +50,7 @@ python -m venv .venv
 . .venv/bin/activate
 python -m pip install -r requirements.txt
 PYTHONPATH=src python -m unittest discover -s tests -v
+python -m unittest discover -s source_intake -p 'test_*.py' -v
 python scripts/prepare_all_stores.py
 python scripts/check_data_ready.py --source-dir data/raw --report reports/source_readiness.json
 python scripts/prepare_study.py
@@ -93,3 +94,5 @@ is reported distress before payoff, not regulatory default or realized loss.
 Unresolved outcomes receive bounds. Hidden borrower/common-shock dependence can
 weaken loan-bootstrap intervals. Broad-group diagnostics do not establish fairness.
 Indian portability, IFRS 9 compliance and intervention effects are not established.
+
+The [21 October publication-status note](reports/publication_status_revision_20261021.json) clarifies the original report label. The original report-builder code, frozen methods, empirical results and dated reproduction hashes are retained.

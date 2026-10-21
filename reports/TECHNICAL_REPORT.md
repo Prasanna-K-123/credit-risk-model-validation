@@ -1,3 +1,5 @@
+**Publication update — 21 October 2026:** This study is completed and published. The report below retains its original 18 October release-candidate wording. See the [current research home](../README.md) and [recorded reproduction](reproduction_verification.json).
+
 # Credit risk under economic stress
 
 Prasanna K · M.A. Actuarial Economics, Madras School of Economics  
