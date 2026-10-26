@@ -1,3 +1,5 @@
+> **Current status — 26 October 2026:** The acquisition checkpoint below is historical. All six study source receipts and the current reproduction instructions are identified in the [maintenance note](CURRENT_STATUS_20261026.md).
+
 # Data provenance and permitted outputs
 
 Source: [Freddie Mac Single-Family Loan-Level Dataset](https://www.freddiemac.com/research/datasets/sf-loanlevel-dataset).

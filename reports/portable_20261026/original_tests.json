@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "arguments": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "returncode": 0,
+      "stderr": "test_calendar_boundaries (test_cohorts.OutcomesTest.test_calendar_boundaries) ... ok\ntest_exact_window_and_boundary_event (test_cohorts.OutcomesTest.test_exact_window_and_boundary_event) ... ok\ntest_payoff_is_competing_and_sale_is_censored (test_cohorts.OutcomesTest.test_payoff_is_competing_and_sale_is_censored) ... ok\ntest_reo_and_duplicate_failure (test_cohorts.OutcomesTest.test_reo_and_duplicate_failure) ... ok\ntest_unknowns_gaps_and_truncation_cannot_make_negative (test_cohorts.OutcomesTest.test_unknowns_gaps_and_truncation_cannot_make_negative) ... ok\ntest_future_mutation_cannot_change_features_and_age_does_not_reset (test_cohorts.SnapshotTest.test_future_mutation_cannot_change_features_and_age_does_not_reset) ... ok\ntest_missing_history_prevents_snapshot (test_cohorts.SnapshotTest.test_missing_history_prevents_snapshot) ... ok\ntest_capacity_bounds_enumerate_unknown_assignments (test_modelling.ModellingRulesTest.test_capacity_bounds_enumerate_unknown_assignments) ... ok\ntest_capacity_ties_independent_of_input_order (test_modelling.ModellingRulesTest.test_capacity_ties_independent_of_input_order) ... ok\ntest_fitting_only_preprocessing_and_unknown_category (test_modelling.ModellingRulesTest.test_fitting_only_preprocessing_and_unknown_category) ... ok\ntest_recalibration_score_and_selection_tolerances (test_modelling.ModellingRulesTest.test_recalibration_score_and_selection_tolerances) ... ok\ntest_transitive_links_external_parent_and_duplicate_failure (test_modelling.ModellingRulesTest.test_transitive_links_external_parent_and_duplicate_failure) ... ok\ntest_display_precision_is_distinct_and_explicit (test_portable_compare.PortableCompareTests.test_display_precision_is_distinct_and_explicit) ... ok\ntest_missing_keys_lists_and_nonfinite_fail (test_portable_compare.PortableCompareTests.test_missing_keys_lists_and_nonfinite_fail) ... ok\ntest_numeric_rule_and_exact_counts (test_portable_compare.PortableCompareTests.test_numeric_rule_and_exact_counts) ... ok\ntest_only_explicit_metadata_excluded (test_portable_compare.PortableCompareTests.test_only_explicit_metadata_excluded) ... ok\ntest_all_original_method_files_unchanged (test_portable_runtime.PortableRuntimeTests.test_all_original_method_files_unchanged) ... ok\ntest_boundary_accuracy_against_independent_decimal_logarithm (test_portable_runtime.PortableRuntimeTests.test_boundary_accuracy_against_independent_decimal_logarithm) ... ok\ntest_domain_rejected_without_fallback (test_portable_runtime.PortableRuntimeTests.test_domain_rejected_without_fallback) ... ok\ntest_monotonic_positive_results_at_boundaries (test_portable_runtime.PortableRuntimeTests.test_monotonic_positive_results_at_boundaries) ... ok\ntest_proxy_is_module_local_and_restores_after_error (test_portable_runtime.PortableRuntimeTests.test_proxy_is_module_local_and_restores_after_error) ... ok\ntest_tiny_branch_and_known_log_two (test_portable_runtime.PortableRuntimeTests.test_tiny_branch_and_known_log_two) ... ok\ntest_upstream_blob_is_exact (test_portable_runtime.PortableRuntimeTests.test_upstream_blob_is_exact) ... ok\ntest_entrypoint_rejects_changed_cache_before_any_ingestion_or_reuse (test_verified_cache.VerifiedCacheTests.test_entrypoint_rejects_changed_cache_before_any_ingestion_or_reuse) ... ok\ntest_inconsistent_fresh_counts_cannot_be_attested (test_verified_cache.VerifiedCacheTests.test_inconsistent_fresh_counts_cannot_be_attested) ... ok\ntest_missing_cache_and_wrong_source_or_method_fail (test_verified_cache.VerifiedCacheTests.test_missing_cache_and_wrong_source_or_method_fail) ... ok\ntest_untouched_cache_reuses_the_recorded_bytes (test_verified_cache.VerifiedCacheTests.test_untouched_cache_reuses_the_recorded_bytes) ... ok\ntest_valid_sql_edit_fails_even_when_integrity_and_counts_still_pass (test_verified_cache.VerifiedCacheTests.test_valid_sql_edit_fails_even_when_integrity_and_counts_still_pass) ... ok\n\n----------------------------------------------------------------------\nRan 28 tests in 0.787s\n\nOK\n",
+      "stdout": ""
+    },
+    {
+      "arguments": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "source_intake",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "stderr": "test_calendar_boundary_and_invalid_month (test_intake.IntakeBoundaries.test_calendar_boundary_and_invalid_month) ... ok\ntest_changed_schema_is_rejected (test_intake.IntakeBoundaries.test_changed_schema_is_rejected) ... ok\ntest_duplicate_gap_and_orphan_are_not_silently_accepted (test_intake.IntakeBoundaries.test_duplicate_gap_and_orphan_are_not_silently_accepted) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.018s\n\nOK\n",
+      "stdout": ""
+    },
+    {
+      "adapter": {
+        "activation": "mortgage_risk.cohorts.math only",
+        "adapter_version": "1.0.0",
+        "calls": 4,
+        "domain": "positive finite binary64",
+        "maximum_input": 100000.0,
+        "minimum_input": 90000.0
+      },
+      "arguments": [
+        "original test_cohorts.py under cohort_math"
+      ],
+      "returncode": 0,
+      "stderr": "test_calendar_boundaries (test_cohorts.OutcomesTest.test_calendar_boundaries) ... ok\ntest_exact_window_and_boundary_event (test_cohorts.OutcomesTest.test_exact_window_and_boundary_event) ... ok\ntest_payoff_is_competing_and_sale_is_censored (test_cohorts.OutcomesTest.test_payoff_is_competing_and_sale_is_censored) ... ok\ntest_reo_and_duplicate_failure (test_cohorts.OutcomesTest.test_reo_and_duplicate_failure) ... ok\ntest_unknowns_gaps_and_truncation_cannot_make_negative (test_cohorts.OutcomesTest.test_unknowns_gaps_and_truncation_cannot_make_negative) ... ok\ntest_future_mutation_cannot_change_features_and_age_does_not_reset (test_cohorts.SnapshotTest.test_future_mutation_cannot_change_features_and_age_does_not_reset) ... ok\ntest_missing_history_prevents_snapshot (test_cohorts.SnapshotTest.test_missing_history_prevents_snapshot) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.004s\n\nOK\n",
+      "stdout": ""
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "attempt": 1,
+  "adapter_version": "1.0.0",
+  "status": "pre-fit gate failed; no models fitted",
+  "tests_passed": {
+    "public": 28,
+    "source_intake": 3,
+    "original_cohort_under_adapter": 7
+  },
+  "source_and_attested_cache_verification": true,
+  "scientific_methods_unchanged": 20,
+  "contract_sha256": "d9490827ad9d8624dd8c485164168fc98b5d11813dc2183377b825c76c1c4bcd",
+  "prepared_tables": {
+    "adaptation_2015.csv": {
+      "historical": "943c716f4222c941755744aeca65a5bb523aa46d2e4d8aee6bf070fb13af61d7",
+      "current": "943c716f4222c941755744aeca65a5bb523aa46d2e4d8aee6bf070fb13af61d7",
+      "exact": true
+    },
+    "stress_test_2018.csv": {
+      "historical": "f7fc56dc4950d9461453736bd99c31ea71ccd40fb215002a50b9881c1bbe958d",
+      "current": "12538c41d5466054eeb948147843065453a4bbe8c91d4ad2a0a8a8a218877a6b",
+      "exact": false
+    },
+    "train_2012.csv": {
+      "historical": "bdeaa4220b0ba26da732ccbcfe710ddbafce803359eb34a3035158a3d1433d7a",
+      "current": "bdeaa4220b0ba26da732ccbcfe710ddbafce803359eb34a3035158a3d1433d7a",
+      "exact": true
+    },
+    "train_2013.csv": {
+      "historical": "63c02f35bee166d5a727800050073ed9263dd754cb7781b84c048388123b8ce8",
+      "current": "63c02f35bee166d5a727800050073ed9263dd754cb7781b84c048388123b8ce8",
+      "exact": true
+    },
+    "transport_test_2021.csv": {
+      "historical": "ff54677dd4eb01ede0b43231c637187024c3df38b2d8e7aec99cf11e00d2fc33",
+      "current": "ff54677dd4eb01ede0b43231c637187024c3df38b2d8e7aec99cf11e00d2fc33",
+      "exact": true
+    },
+    "validation_2016.csv": {
+      "historical": "6ce5b23fbc7a8e56ea22550908398529860d8d4ce78dad81b25b23e1644b068c",
+      "current": "2a87e7ebe62360976e9a09391b6987cba99f564ea2c7d475235c8cb3b26ccc78",
+      "exact": false
+    }
+  },
+  "fit_marker_exists": false
+}

@@ -1,0 +1,27 @@
+{
+  "adapter": {
+    "activation": "mortgage_risk.cohorts.math only",
+    "adapter_version": "1.0.0",
+    "calls": 172844,
+    "domain": "positive finite binary64",
+    "maximum_input": 1575000.0,
+    "minimum_input": 9.72
+  },
+  "completed_utc": "2026-10-26T10:27:14.094084+00:00",
+  "model_refits": 0,
+  "original_internal_verification": {
+    "checks": {
+      "aggregate_scenario_cells": 12,
+      "capacity_selections": 12,
+      "recomputed_brier_scores": 4,
+      "sealed_model_files": 4,
+      "sealed_test_predictions": 2,
+      "unchanged_prefit_method_files": true
+    },
+    "gate_F": "Open: publication, live browser verification and tagged release required.",
+    "model_refits_during_verification": 0,
+    "passed": true,
+    "source_terms": "Raw data/model artifacts remain private; aggregates only."
+  },
+  "passed": true
+}

@@ -1,0 +1,146 @@
+{
+  "adapter_version": "1.0.0",
+  "cache_attestation_sha256": "077620f1a65b66556619037e2ac30ede6210d874f0d28cab0fd06072f2e6e405",
+  "cache_verification": {
+    "passed": true,
+    "stores": [
+      {
+        "status": "cache_digest_verified",
+        "year": 2012
+      },
+      {
+        "status": "cache_digest_verified",
+        "year": 2013
+      },
+      {
+        "status": "cache_digest_verified",
+        "year": 2015
+      },
+      {
+        "status": "cache_digest_verified",
+        "year": 2016
+      },
+      {
+        "status": "cache_digest_verified",
+        "year": 2018
+      },
+      {
+        "status": "cache_digest_verified",
+        "year": 2021
+      }
+    ],
+    "verify_only": true
+  },
+  "comparison_contract_sha256": "d9490827ad9d8624dd8c485164168fc98b5d11813dc2183377b825c76c1c4bcd",
+  "created_utc": "2026-10-26T09:57:17.364397+00:00",
+  "execution_file_sha256": {
+    "compatibility/reproduction_contract_v1.json": "d9490827ad9d8624dd8c485164168fc98b5d11813dc2183377b825c76c1c4bcd",
+    "docs/IMPLEMENTATION.md": "2ddf489d851da177857056b9e2829bd9ced3751672c58ebe21faf6303bac86b0",
+    "docs/PROTOCOL.md": "f3a82891499768e47aa39e7506876210749f03f624a6f756a7f2d8a4bb0d02cb",
+    "docs/demo.template.html": "58f847129056d4c1249cb40e2d941fd2d327f84dee2478af277c8d5dcc47862c",
+    "reports/evaluation_repair.json": "f9d0c76e6e5186f4f89eb34fbb554071abaf52a7c0ad16bf494a2bcaeb9ebd7d",
+    "reports/prefit_manifest.json": "090278b2c92e8fb7c047f2779c5d27ceb676de840c49c70077e70b53d45db194",
+    "requirements.txt": "7ffdd66d178a64d4fe7d15288234042268cda8dfc274b8c4c31a68231576a500",
+    "scripts/build_cohort.py": "40a928eb7980ae54a7aa002d5cacefc82a7e131987e88bdac600146a35d4b35c",
+    "scripts/build_demo.py": "8d4afa96410452dca0467967f0e060d5bd03fa12b4a3cf215c0ed24c1d0d21ee",
+    "scripts/build_reports.py": "509403c5545e11e4022d7c3d534f70e681bc2e165d56227cd25ea627c209db04",
+    "scripts/check_data_ready.py": "6876431b3a4b6db0024b77b2c43ab9c8ddcb0976b2f60ac25ccec72385d574f1",
+    "scripts/evaluate_frozen.py": "4f7fd67b553fc67605593a4d58482480d5888d529164ea4325a1887cf09c890e",
+    "scripts/evaluate_release.py": "2787ae2abfd8939a458283779af694ad8d379b48b44ece19ea82f994ff58f839",
+    "scripts/fit_and_seal.py": "2724c01592eb90e034013873d49d19634cad0026645a457615235b9e5effe2ba",
+    "scripts/freeze_prefit.py": "331fdbe7f1911726192390f2fd494750e191d072e6312d92a8ade69abe15f9bd",
+    "scripts/ingest_audit.py": "dba27a945028c5987ac180267334f18411c85604a0b448bb77811252fbe62696",
+    "scripts/portable_compare.py": "c6e5c3aa1ea7c0819b79ca9bac6bb42b5786745c52b3d4108d39a7d30cb3d6b3",
+    "scripts/portable_reproduction.py": "7755a6b8739afd82d25cc25ccc8df2a4d566bf7389361e7b52058385b57605f2",
+    "scripts/prepare_all_stores.py": "bfa655a009588f1c8578deff82be88685303850b9fd8ba56acc33435be9a7718",
+    "scripts/prepare_study.py": "e95aa5be4a263c616465bda400c8c437dbdc5904d710d6c3c03a2beafb67fba4",
+    "scripts/prepare_verified_stores.py": "af2b938864e740d0f7e1a4fc82a9170aac53cf941762a557611899443d2167ad",
+    "scripts/report_html.py": "a8eacd857b521afbf2d584da6897f25a863f7632130adeac61cb3345d04387f3",
+    "scripts/verify_results.py": "3d99bd34daff3cff9198632ea24d87086ba2e8843acb8b7679b8c246e9077a96",
+    "source_intake/audit_uploads.py": "c4c61cee8013f8ea7a0e9febe626bc8213cdcb9c7dc85926dee25283dca064de",
+    "source_intake/test_intake.py": "c8c3a95aef7534c55d6d4416053c487bf3d928d0212e6eb86625e2c48fc900d7",
+    "sql/snapshot.sql": "9d24fc386ff7b4089a299bd33054a5fd44c4d2ba2d7f9fade3410222a0ffc756",
+    "src/mortgage_risk/__init__.py": "e0013a1f19b847b7a321b586e2d40d6f57933175538e5c9e06d8671da7b4a88c",
+    "src/mortgage_risk/cohorts.py": "d27d1c1b4c2b9a116a468af3e512763a92f0e4b2390019bf62d4c48ecb4b2c17",
+    "src/mortgage_risk/evaluation.py": "6e90d1c6b8102f1311aeda3dc5cfa44b78d57fc309908bb5f5e4401224067a4b",
+    "src/mortgage_risk/modelling.py": "ef1dc7fb075d6e913dc25b6c34cdf7f8a5091d55a0f1c1ead62f56ba854ec97c",
+    "src/mortgage_risk/portable_log1p.py": "72ec76b8ebb99f51712f305fa840272ed97f30f4a066906cff3131aacb8c1b50",
+    "src/mortgage_risk/schema.py": "6144ca8ee5c98e08d07badb84313f8c8e80bb9da48b7caf93f7647ac37773035",
+    "study.json": "cf7ba51781aaba53462ea418eeacc43a9130f0d6edd701304b96d10d680969d8",
+    "tests/test_cohorts.py": "23a1e56033a0645c9e90c1daa2f43dc81c67a8cb196f6bb19c13bbbd61f8d671",
+    "tests/test_modelling.py": "298788aeec1f9e40cee08d262afa9c1e661112c597e25f3ce8939ef69eb2d77a",
+    "tests/test_portable_compare.py": "61b3dee74f37254861f52a1d188d5859cb6430ab62ed2d901c81f63a001734ac",
+    "tests/test_portable_runtime.py": "08446bd53e0e2a22645f422b4bae412dd86b692b86d6f496e4eace1f1cd9e09e",
+    "tests/test_verified_cache.py": "e02293da193c20238391af7cc25f4784312e4f42dcd4621d4b35a78bcfd969b8",
+    "third_party/glibc/README.md": "a351b7479f2d380f0b49c93376c727575c73a2804330cf63daf66a387267afe5",
+    "third_party/glibc/s_log1p.c": "1bda067a394a58f1390ed1a6dd823941e50f9f0bc897d4854a9c896d5f296195",
+    "tools/polish_demo_layout.py": "e22cc92c2a05df85c62b27bd45df8eb00c439ed9370df5336e08764179688713"
+  },
+  "fit_budget": {
+    "full_fits": 4,
+    "hyperparameter_search": false,
+    "intercept_fits": 2
+  },
+  "original_method_count": 20,
+  "runtime": {
+    "machine": "AMD64",
+    "packages": {
+      "joblib": "1.5.3",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.0",
+      "threadpoolctl": "3.6.0"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "python_utf8": "1",
+    "sqlite": "3.53.1",
+    "thread_environment": {
+      "BLIS_NUM_THREADS": "2",
+      "MKL_NUM_THREADS": "2",
+      "NUMEXPR_NUM_THREADS": "2",
+      "OMP_NUM_THREADS": "2",
+      "OPENBLAS_NUM_THREADS": "2",
+      "VECLIB_MAXIMUM_THREADS": "2"
+    },
+    "threadpools": [
+      {
+        "architecture": "Haswell",
+        "filepath": "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.30"
+      },
+      {
+        "architecture": "Haswell",
+        "filepath": "libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.30"
+      },
+      {
+        "filepath": "vcomp140.dll",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "vcomp",
+        "user_api": "openmp",
+        "version": null
+      }
+    ],
+    "utf8_mode": 1
+  },
+  "scope": "Compatibility-assisted local rerun; no native environment identity claim.",
+  "tests": {
+    "passed": true,
+    "receipt_sha256": "71f1af1a2ab17bd52f1624be659966d805ccfed9c8c89b01f893f16ce5bdc6f3"
+  },
+  "upstream_blob": "eeb0af859ffce7dacb14bf8fe82ff88ed11af23e",
+  "upstream_commit": "ce65d944e38a20cb70af2a48a4b8aa5d8fabe1cc"
+}

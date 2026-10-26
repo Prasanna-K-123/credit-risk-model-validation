@@ -1,0 +1,119 @@
+{
+  "all_six_numeric_checks": {
+    "balance_ratios_checked": 265445,
+    "cohorts": [
+      {
+        "has_forward_labels": true,
+        "historical_missingness_exact": true,
+        "logs_checked": 90258,
+        "maximum_log_input": 1187000.0,
+        "minimum_log_input": 3025.43,
+        "ratios_checked": 45129,
+        "rows": 45129,
+        "schema_key_order_passed": true,
+        "year": 2012
+      },
+      {
+        "has_forward_labels": true,
+        "historical_missingness_exact": true,
+        "logs_checked": 91070,
+        "maximum_log_input": 968000.0,
+        "minimum_log_input": 699.5,
+        "ratios_checked": 45535,
+        "rows": 45535,
+        "schema_key_order_passed": true,
+        "year": 2013
+      },
+      {
+        "has_forward_labels": true,
+        "historical_missingness_exact": true,
+        "logs_checked": 85904,
+        "maximum_log_input": 974000.0,
+        "minimum_log_input": 2331.84,
+        "ratios_checked": 42952,
+        "rows": 42952,
+        "schema_key_order_passed": true,
+        "year": 2015
+      },
+      {
+        "has_forward_labels": true,
+        "historical_missingness_exact": true,
+        "logs_checked": 90814,
+        "maximum_log_input": 975000.0,
+        "minimum_log_input": 1124.36,
+        "ratios_checked": 45407,
+        "rows": 45407,
+        "schema_key_order_passed": true,
+        "year": 2016
+      },
+      {
+        "has_forward_labels": false,
+        "historical_missingness_exact": true,
+        "logs_checked": 80132,
+        "maximum_log_input": 1041000.0,
+        "minimum_log_input": 46.94,
+        "ratios_checked": 40066,
+        "rows": 40066,
+        "schema_key_order_passed": true,
+        "year": 2018
+      },
+      {
+        "has_forward_labels": false,
+        "historical_missingness_exact": true,
+        "logs_checked": 92712,
+        "maximum_log_input": 1575000.0,
+        "minimum_log_input": 9.72,
+        "ratios_checked": 46356,
+        "rows": 46356,
+        "schema_key_order_passed": true,
+        "year": 2021
+      }
+    ],
+    "decimal_precision": 80,
+    "log_accuracy_bound_ulps": 1,
+    "log_cells_checked": 530890,
+    "maximum_observed_log_error_ulps": 0.5223372377967053,
+    "passed": true,
+    "scope": "Accuracy and current source consistency, not unavailable historical cellwise equality."
+  },
+  "all_six_schema_keys_order_missingness_counts_passed": true,
+  "checker_sha256": "125f4d37b5529b63bf926958801810394371a244448bad7a02de51ae87ba6966",
+  "current_prepared_sha256": {
+    "adaptation_2015.csv": "943c716f4222c941755744aeca65a5bb523aa46d2e4d8aee6bf070fb13af61d7",
+    "stress_test_2018.csv": "12538c41d5466054eeb948147843065453a4bbe8c91d4ad2a0a8a8a218877a6b",
+    "train_2012.csv": "bdeaa4220b0ba26da732ccbcfe710ddbafce803359eb34a3035158a3d1433d7a",
+    "train_2013.csv": "63c02f35bee166d5a727800050073ed9263dd754cb7781b84c048388123b8ce8",
+    "transport_test_2021.csv": "ff54677dd4eb01ede0b43231c637187024c3df38b2d8e7aec99cf11e00d2fc33",
+    "validation_2016.csv": "2a87e7ebe62360976e9a09391b6987cba99f564ea2c7d475235c8cb3b26ccc78"
+  },
+  "elapsed_seconds": 68.18700000015087,
+  "historical_prepared_byte_gate": "FAILED for 2016 and 2018; preserved separately.",
+  "no_historical_rowwise_equivalence_claim": true,
+  "passed": true,
+  "two_unmatched_tables_raw_reconstruction": [
+    {
+      "algorithm": "Independent Python reconstruction from pinned ZIP strings; no snapshot SQL.",
+      "categorical_cells_exact": 181628,
+      "features_per_row": 20,
+      "forward_outcome_fields_used": false,
+      "historical_array_comparison": "Unavailable; this establishes current raw-source consistency.",
+      "numeric_cells_exact": 726512,
+      "passed": true,
+      "raw_feature_window_records": 272442,
+      "rows": 45407,
+      "year": 2016
+    },
+    {
+      "algorithm": "Independent Python reconstruction from pinned ZIP strings; no snapshot SQL.",
+      "categorical_cells_exact": 160264,
+      "features_per_row": 20,
+      "forward_outcome_fields_used": false,
+      "historical_array_comparison": "Unavailable; this establishes current raw-source consistency.",
+      "numeric_cells_exact": 641056,
+      "passed": true,
+      "raw_feature_window_records": 240396,
+      "rows": 40066,
+      "year": 2018
+    }
+  ]
+}

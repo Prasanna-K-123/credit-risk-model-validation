@@ -4,7 +4,7 @@
 
 **A better held-out score did not make the probabilities safe to use.**
 
-A six-vintage Freddie Mac mortgage study by Prasanna K, M.A. Actuarial Economics,
+A six-vintage Freddie Mac mortgage study by Prasanna K, an economics student at
 Madras School of Economics. Audited 300,000 loans and 20,151,667 monthly records;
 constructed chronological SQL snapshots and explicitly censored 12-month labels;
 compared fixed logistic and histogram-boosting models with bounded adaptation.
@@ -19,6 +19,7 @@ or capital use. The separate 2023 transport check preserves the same models.
 The validation-based recommendation remains unchanged logistic under the fixed
 0.0001 simplicity tolerance. Neither model is reselected using test results.
 
+- [Current Windows verification (26 October)](docs/exports/windows_verification_20261026.html)
 - [Live aggregate explorer](https://prasanna-k-123.github.io/credit-risk-model-validation/)
 - [Technical report](reports/TECHNICAL_REPORT.md)
 - [Decision memo](reports/DECISION_MEMO.md)
@@ -30,55 +31,57 @@ The validation-based recommendation remains unchanged logistic under the fixed
 
 ## Automated public checks
 
-The automated checks run on public files without private data, credentials or model refitting. They run 12 cohort/model tests and three source-intake tests. The intake checks reject changed schemas and detect duplicate loan-months, internal gaps and orphan performance keys. Raw-source model reproduction is separate.
+The public suite runs without private data or model refitting: 12 original
+cohort/model tests, five cache-integrity tests, seven licensed-adapter tests,
+four comparison tests and three independent raw-feature tests (31 total).
+Three source-intake tests also reject schema, key and gap defects.
 
 ## Reproduce
 
-Use the exact packages in `requirements.txt`. The scientific comparison uses four
-unique full model fits and two intercept-only adaptation updates, with no search.
-Test predictions are sealed before evaluation.
+The [26 October current-status note](docs/CURRENT_STATUS_20261026.md) records a
+completed, newly fitted Windows verification. All 967 floating aggregate fields
+pass the predeclared absolute-plus-relative 1e-10 comparison; all 456 discrete
+numeric fields and 76 report-display checks match. The original selection and
+probability-use restriction remain unchanged.
+
+**Exact historical input identity remains 4/6.** Two prepared-table hashes and
+their dependent digests differ; the full historical comparison remains failed.
+Independent raw-feature reconstruction verifies the current tables. The new
+model and prediction files are separately sealed, with no claim of historical
+rowwise or binary identity. Original scientific reports remain unchanged; new
+evidence is under [reports/portable_20261026](reports/portable_20261026/summary.json).
+
+Use Python 3.12 and the exact packages in `requirements.txt`. Repository-local
+`.gitattributes` preserves the source bytes required by the historical seals.
+Use a clean private reproduction copy; retain any fitting-start marker and
+never replace expected historical hashes.
 
 Obtain permitted personal noncommercial access through the [official Freddie Mac
 dataset page](https://www.freddiemac.com/research/datasets/sf-loanlevel-dataset).
-Review its current terms. Acquire Release 47 samples for 2012, 2013, 2015, 2016,
-2018 and 2021. Place them in `data/raw/sample_YEAR.zip`. Required hashes appear
-in `source_intake/reports/intake_summary.json`; changed bytes fail ingestion.
-No protected download is automated here. From the repository root:
+Review its current terms. Supply Release 47 samples for 2012, 2013, 2015, 2016,
+2018 and 2021 as `data/raw/sample_YEAR.zip`. The required hashes are in
+`source_intake/reports/intake_summary.json`; revised source bytes fail.
 
-```bash
-python -m venv .venv
-. .venv/bin/activate
-python -m pip install -r requirements.txt
-PYTHONPATH=src python -m unittest discover -s tests -v
-python -m unittest discover -s source_intake -p 'test_*.py' -v
-python scripts/prepare_all_stores.py
-python scripts/check_data_ready.py --source-dir data/raw --report reports/source_readiness.json
-python scripts/prepare_study.py
-OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=1 python scripts/fit_and_seal.py
-OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=1 python scripts/evaluate_release.py
-python scripts/build_reports.py
-python scripts/build_demo.py
-python tools/polish_demo_layout.py
-python scripts/verify_results.py
-```
+The [portable guide](docs/PORTABLE_REPRODUCTION.md) gives complete PowerShell
+and Bash commands, pinned upstream attribution and both distinct routes:
 
-This checks hashes, CRCs, schema, key relationships, source gaps, SQL integrity
-and supplied cross-cohort links. The original 2012 CSV must reproduce exactly.
-Preparation builds four labeled fitting/validation cohorts and two label-free
-test snapshots. Preserve the supplied pre-fit manifest; `fit_and_seal.py` checks
-every original method hash and refuses an existing started-fit marker. Use a
-clean working copy for reproduction; it repeats the same candidates, not search.
-Run-seal dates differ between reproductions and are excluded from scientific
-comparisons. `evaluate_release.py` differs from the retained original evaluator
-by one documented audit-metadata key repair; no model or scoring rule changed.
+- `scripts/portable_reproduction.py` preserves the all-six historical identity
+  check and stops if it fails.
+- `scripts/windows_verification.py` executes the explicit Windows v1 protocol,
+  preserving that failure and independently verifying the declared current inputs
+  before the unchanged four-fit/two-update study.
 
-Open `docs/index.html` for the self-contained aggregate explorer. Capacity,
-assumed severity and review cost select saved aggregates or arithmetic scenarios.
-No individual lending decision or causal avoided-loss estimate occurs. The public
-explorer has been checked across all 12 cohort/model/capacity views, keyboard
-controls, three report links and desktop/375px/320px iframe widths. These are
-browser CSS checks, not phone OS or touch-input certification. See the
-[recorded browser verification](reports/browser_verification.json).
+The additive `prepare_verified_stores.py` ingests sources and attests private SQL
+cache bytes. Later reuse requires a matching attestation; mere file existence
+or an old integrity statement is insufficient. The original cache entrypoint
+is retained as historical code. Test predictions are sealed before evaluation;
+no hyperparameter search or test-based reselection occurs.
+
+The published aggregate explorer remains the historical view. Its recorded
+[browser checks](reports/browser_verification.json) cover that version, not a
+new device certification for this maintenance. The current execution report
+links the new aggregate evidence. Capacity/severity/cost scenarios do not
+identify intervention benefits or achieved avoided losses.
 
 ## Private artifacts and interpretation
 

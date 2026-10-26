@@ -1,0 +1,140 @@
+{
+  "comparison": {
+    "all_floating_fields_pass": true,
+    "all_integer_boolean_fields_exact": true,
+    "all_report_display_checks_pass": true,
+    "decision_unchanged": true,
+    "display_fields_compared": 76,
+    "floating_fields_compared": 967,
+    "full_11_json_comparison_passed": false,
+    "full_comparison_failures": "Five digest fields trace the two unresolved prepared tables; full differences retained.",
+    "historical_rowwise_difference_estimation": "Unavailable; original private prediction arrays were not supplied.",
+    "integer_boolean_fields_compared": 456,
+    "model_binaries_match_historical": false,
+    "prediction_files_raw_or_lf_normalized_match_historical": false,
+    "unchanged_contract_sha256": "d9490827ad9d8624dd8c485164168fc98b5d11813dc2183377b825c76c1c4bcd"
+  },
+  "data_lineage": "Six user-authorized ZIPs match pinned source hashes. Earlier fresh original ingestion produced attested caches; this scientific run reverified and reused those exact bytes, without reingesting or uploading raw data.",
+  "date": "2026-10-26",
+  "decision": "Restrict both models to historical research/ranking; reject unchanged probabilities for operational loss/capital decisions.",
+  "execution_sources_match_between_canonical_and_run": 45,
+  "fitting": {
+    "boosting_rounds": [
+      200,
+      200
+    ],
+    "convergence_warnings": 0,
+    "full_fits": 4,
+    "hyperparameter_search": false,
+    "intercept_updates": 2,
+    "logistic_iterations": [
+      31,
+      27
+    ],
+    "models_and_test_predictions_sealed_before_evaluation": true,
+    "subsequent_refits": 0
+  },
+  "historical_canonical_scientific_jsons_preserved": 11,
+  "historical_exact_reproduction": "Not established: historical prepared-table identity remains 4/6; no expected historical digest was changed.",
+  "independent_input_checks": {
+    "all_passed": true,
+    "log_cells": 530890,
+    "maximum_log_error_ulps": 0.5223372377967053,
+    "ratios": 265445,
+    "raw_reconstructed_feature_cells": 1709460,
+    "raw_reconstructed_rows": 85473
+  },
+  "limits": "Later-revised US originated-mortgage data; not regulatory default, IFRS 9 ECL, Indian underwriting, causal intervention benefit or an employer-approved model.",
+  "no_publication": true,
+  "original_scientific_methods_unchanged": 20,
+  "principal_results": {
+    "2020": {
+      "events": 1946,
+      "known": 40059,
+      "models": {
+        "hgb": {
+          "average_precision": 0.17207060834203244,
+          "brier": 0.04574347491856327,
+          "observed_expected_ratio": 6.155351293160658,
+          "roc_auc": 0.7154708092172168
+        },
+        "logit": {
+          "average_precision": 0.15995671443095957,
+          "brier": 0.04645529685136479,
+          "observed_expected_ratio": 8.32398033101842,
+          "roc_auc": 0.6929745534921322
+        }
+      },
+      "paired_brier": {
+        "hgb_minus_logit": -0.0007118219328015098,
+        "paired_percentile_95_interval": [
+          -0.0009197104789197541,
+          -0.0005154003879141054
+        ],
+        "replicates": 2000,
+        "resampling_unit": "loan",
+        "seed": 20261016
+      },
+      "unresolved": 7
+    },
+    "2023": {
+      "events": 275,
+      "known": 46350,
+      "models": {
+        "hgb": {
+          "average_precision": 0.29302589620214664,
+          "brier": 0.0049196980914409496,
+          "observed_expected_ratio": 1.839933717647019,
+          "roc_auc": 0.9005038820105559
+        },
+        "logit": {
+          "average_precision": 0.2392067292847144,
+          "brier": 0.005307312307815049,
+          "observed_expected_ratio": 2.2968369929765906,
+          "roc_auc": 0.8847105805751492
+        }
+      },
+      "paired_brier": {
+        "hgb_minus_logit": -0.0003876142163740995,
+        "paired_percentile_95_interval": [
+          -0.000569091762483238,
+          -0.00020239171073243716
+        ],
+        "replicates": 2000,
+        "resampling_unit": "loan",
+        "seed": 20261016
+      },
+      "unresolved": 6
+    }
+  },
+  "receipt_paths": {
+    "full_differences": "reports/portable_20261026/comparison.json",
+    "new_protocol": "compatibility/windows_verification_v1.json",
+    "public_current_evidence": "reports/portable_20261026/current/"
+  },
+  "runtime": {
+    "adapter": "positive finite glibc grouped-polynomial translation 1.0.0",
+    "os": "Windows 11 AMD64",
+    "python": "3.12.14",
+    "thread_caps": 2
+  },
+  "selection": {
+    "recommended_family": "logit",
+    "selected_variants": {
+      "hgb": "retrained",
+      "logit": "unchanged"
+    }
+  },
+  "status": "Completed Windows verification v1 scientific refit",
+  "tests": {
+    "all_passed": true,
+    "original_cohort_tests_repeated_under_adapter": 7,
+    "public_tests": 31,
+    "source_intake_tests": 3
+  },
+  "timings_seconds": {
+    "evaluation_reports_original_verification": 41.54700000002049,
+    "fixed_fit_stage": 16.719000000040978,
+    "historical_comparison": 3.4060000001918525
+  }
+}

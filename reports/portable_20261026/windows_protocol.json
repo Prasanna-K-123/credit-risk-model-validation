@@ -1,0 +1,55 @@
+{
+  "adapter_version": "1.0.0",
+  "authorization": "Root explicitly approved a separate versioned Windows verification after the unchanged historical all-six gate failed. No model fitting has yet started.",
+  "before_fit_checks": {
+    "attested_sql_cache_hashes_exact": 6,
+    "balance_log_accuracy": "All current log features: exact declared adapter output and <=1 ulp error against 80-digit Decimal ln(1+x) on actual positive source inputs.",
+    "balance_ratios": "All current ratios: exact high-precision division of source float balances.",
+    "current_data_and_runtime_seal": "Freeze this protocol, all current prepared hashes, source/execution hashes, runtime and completed check receipts before fitting.",
+    "historical_eligible_and_feature_missingness_counts_exact": 6,
+    "historical_fitting_adaptation_validation_label_counts_exact": 4,
+    "independent_raw_reconstruction": "All 20 predictors for every 2016 and 2018 eligible loan, reconstructed directly from pinned ZIP origination strings and six feature-window monthly records without snapshot SQL or forward-outcome fields.",
+    "original_method_files_exact": 20,
+    "prepared_schema_order_keys_unique_sorted": 6,
+    "raw_zip_hashes_exact": 6
+  },
+  "classification": "New Windows scientific refit with current verified raw-source inputs; not exact historical reproduction.",
+  "comparison": {
+    "display_and_decision": "Only the original contract's prespecified 76 report-format values and decision assessment.",
+    "failure_action": "Report failures without changing tolerances or repeating fits.",
+    "full_11_json_comparison": "Preserve all differences under the original unchanged contract, including the known prepared-input hashes.",
+    "metric_only_assessment": "Separately report every numeric leaf from those same comparisons using the unchanged absolute+relative 1e-10 rule; exact integer/boolean counts and categorical scientific selections remain separately checked. Never imply matching numeric aggregates proves historical rowwise input or prediction equality.",
+    "prediction_identity": "Compare raw and LF-normalized serialized prediction hashes; do not infer rowwise agreement from aggregates."
+  },
+  "current_prepared_sha256": {
+    "adaptation_2015.csv": "943c716f4222c941755744aeca65a5bb523aa46d2e4d8aee6bf070fb13af61d7",
+    "stress_test_2018.csv": "12538c41d5466054eeb948147843065453a4bbe8c91d4ad2a0a8a8a218877a6b",
+    "train_2012.csv": "bdeaa4220b0ba26da732ccbcfe710ddbafce803359eb34a3035158a3d1433d7a",
+    "train_2013.csv": "63c02f35bee166d5a727800050073ed9263dd754cb7781b84c048388123b8ce8",
+    "transport_test_2021.csv": "ff54677dd4eb01ede0b43231c637187024c3df38b2d8e7aec99cf11e00d2fc33",
+    "validation_2016.csv": "2a87e7ebe62360976e9a09391b6987cba99f564ea2c7d475235c8cb3b26ccc78"
+  },
+  "date": "2026-10-26",
+  "execution": {
+    "evaluation_refits": 0,
+    "full_fits": 4,
+    "hyperparameter_search": false,
+    "intercept_fits": 2,
+    "original_internal_verification_required": true,
+    "prediction_seal_before_final_labels": true,
+    "selection_rules": "Unchanged original fit_and_seal.py"
+  },
+  "historical_comparison_contract": "compatibility/reproduction_contract_v1.json",
+  "historical_comparison_contract_sha256": "d9490827ad9d8624dd8c485164168fc98b5d11813dc2183377b825c76c1c4bcd",
+  "historical_gate": {
+    "full_fits_before_new_protocol": 0,
+    "original_2012_gate": "Passed without modification.",
+    "preserved": "All-six exact historical prepared-table gate remains FAILED 4/6.",
+    "unmatched_tables": [
+      "validation_2016.csv",
+      "stress_test_2018.csv"
+    ]
+  },
+  "protocol_version": "windows-verification-1.0.0",
+  "rationale": "The grouped-polynomial adapter reproduces all actual fitting/adaptation tables and the 2021 transport features exactly. The two remaining historical table digests cannot establish which cells differ because historical private tables are unavailable. Alternative numeric hypotheses did not recover all six. Verify every current feature independently for the unmatched tables and retain the evidence boundary instead of claiming historical identity."
+}
