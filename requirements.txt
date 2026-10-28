@@ -1,1 +1,6 @@
--r bank_monitoring/requirements-fdic-temporal.txt
+# Current supported installation. The nested requirements file is frozen research history.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+scikit-learn==1.8.0
+pytest==9.0.3

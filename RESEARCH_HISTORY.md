@@ -10,15 +10,39 @@ The original FDIC protocol is dated 10 October 2026. Its source-freeze commit/tr
 
 ## Test dependency maintenance — 28 October 2026
 
-The current test harness now pins **pytest 9.0.3** instead of 8.3.3. This is the
-minimum patched release for [CVE-2025-71176 / GHSA-6w46-j5rx-g56g](https://github.com/advisories/GHSA-6w46-j5rx-g56g),
-which concerns predictable temporary-directory handling on UNIX when another
-local user can interfere with the shared temporary area. It is a test-environment
+The supported installation in the repository-root `requirements.txt` pins
+**pytest 9.0.3**, the minimum fix for
+[CVE-2025-71176 / GHSA-6w46-j5rx-g56g](https://github.com/advisories/GHSA-6w46-j5rx-g56g).
+The issue concerns predictable temporary-directory handling on UNIX when another
+local user can interfere with the shared temporary area. It is a test-harness
 issue, not an FDIC model or static-explorer vulnerability.
 
-The existing suite passes **42 tests and 17 subtests** with the patched pin. A
-separate temporary-directory fixture smoke check confirms owner-only base
-permissions and normal file access in the tested environment; it is not an
-exhaustive exploit test. A current PyPI advisory query reports no known advisory
-for pytest 9.0.3. No scientific fitting or source/output-seal change was needed.
-The earlier requirements and execution records remain historical evidence.
+The first maintenance commit,
+[`4b5a4ad25fbf`](https://github.com/Prasanna-K-123/credit-risk-model-validation/commit/4b5a4ad25fbf9cd9df1cdee5bc1a4697495b55e5),
+changed the nested historical requirements file. Its 42 tests passed, but
+[CI's full reproduction](https://github.com/Prasanna-K-123/credit-risk-model-validation/actions/runs/40715940945)
+correctly rejected that change because the file belongs to the frozen research
+manifest. Unit-test success did not establish that the complete reproduction
+contract still held.
+
+The correction restores `bank_monitoring/requirements-fdic-temporal.txt` to its
+exact original bytes, including the historical pytest 8.3.3 entry. That nested
+file is preserved research evidence and is **not the supported installation
+route**. The root requirements independently specify the same four scientific
+packages and patched pytest 9.0.3; they do not include the historical file.
+Neither the frozen manifest nor its tolerance or scientific outputs changed.
+
+The current default suite passes **44 tests and 17 subtests**, including two
+new early checks: validate every frozen-source file and reject a simulated edit
+to the historical dependency pin. The full pinned-source fitting, calibration,
+policy and independent-review pipeline then passes with maximum probability
+difference `5.658584711909498e-12`, 237,253 eligible rows and 1,470 independent
+comparisons. The four generated presentations match their evidence and all
+850 explorer-script checks pass. This repeat fit verifies the unchanged study;
+it is not a new model selection or an additional untouched evaluation.
+
+The patched pytest temporary-directory fixture also passed a separate ownership,
+private-base-permission and file-access smoke check, without claiming exhaustive
+exploit testing. A current advisory query returns no known advisory for the five
+packages in the supported root installation. Older environments and execution
+records retain their historical dates.
