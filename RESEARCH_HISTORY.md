@@ -7,3 +7,18 @@ The older mortgage implementation and its historical receipts remain at immutabl
 Bank failure and borrower distress are different targets and populations. No mortgage metric, loan count, loss estimate or IFRS 9 claim is carried into the bank-risk headline. The scope change provides a fully public source-to-result route while preserving the earlier work's provenance instead of fabricating a new development history.
 
 The original FDIC protocol is dated 10 October 2026. Its source-freeze commit/tree identifiers are preserved in the artifact manifest. The current reproduction verifies those frozen bytes; it does not independently certify an external preregistration service or recreate the circumstances of the first experiment. New governance/PSI diagnostics are explicitly post hoc, and no original model, split, candidate grid, calibrator or threshold was retuned.
+
+## Test dependency maintenance — 28 October 2026
+
+The current test harness now pins **pytest 9.0.3** instead of 8.3.3. This is the
+minimum patched release for [CVE-2025-71176 / GHSA-6w46-j5rx-g56g](https://github.com/advisories/GHSA-6w46-j5rx-g56g),
+which concerns predictable temporary-directory handling on UNIX when another
+local user can interfere with the shared temporary area. It is a test-environment
+issue, not an FDIC model or static-explorer vulnerability.
+
+The existing suite passes **42 tests and 17 subtests** with the patched pin. A
+separate temporary-directory fixture smoke check confirms owner-only base
+permissions and normal file access in the tested environment; it is not an
+exhaustive exploit test. A current PyPI advisory query reports no known advisory
+for pytest 9.0.3. No scientific fitting or source/output-seal change was needed.
+The earlier requirements and execution records remain historical evidence.
