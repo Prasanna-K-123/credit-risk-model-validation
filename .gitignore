@@ -1,10 +1,7 @@
-data/
-artifacts/
-__pycache__/
-*.pyc
 .venv/
-*.zip
-*.sqlite*
-private_logs/
-.env*
-*.sqlite*
+__pycache__/
+.pytest_cache/
+*.pyc
+work/
+artifacts/
+bank_monitoring/reference/fdic_temporal/test_predictions.csv

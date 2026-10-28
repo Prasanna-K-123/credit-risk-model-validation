@@ -1,0 +1,34 @@
+{
+  "version": "fdic-annual-temporal-v1",
+  "registered_on": "2026-10-10",
+  "target": "FDIC certificate failure within the next calendar year, with nonfailure closure/insurance exit as a competing nonfailure outcome; not borrower default or IFRS9 PD",
+  "annual_anchor": "December 31 report, assumed usable on following April 1; prediction interval (April 1, next April 1]",
+  "availability_limitation": "Three-month availability lag is a research assumption; current historical revisions are not reconstructed. This is retrospective temporal evaluation, not point-in-time prospective performance.",
+  "outcome_cutoff": "2026-08-19",
+  "report_years": {
+    "development": [1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005],
+    "selection": [2007,2008],
+    "calibration": [2010],
+    "policy": [2012],
+    "test": [2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
+  },
+  "features": ["equity_to_assets","loans_to_assets","deposits_to_assets","cash_to_assets","securities_to_assets","nonperforming_assets_fraction","return_on_assets_fraction","net_interest_margin_fraction","log_assets"],
+  "excluded_predictors": ["CERT","NAME","REPDTE","ACTIVE","ENDEFYMD","ESTYMD","INSDATE","FAILDATE","RESTYPE","failure_date","nonfailure_exit","role","future_macro_variables"],
+  "missingness": "Training-only median imputation and training-only robust scaling for logistic models; gradient boosting uses native missing-value routing. Reject entirely missing development features.",
+  "models": {
+    "constant": "Development event rate, no search",
+    "capital_only": "Equity/assets logistic C=1, no search",
+    "logistic": {"C_candidates":[0.01,0.1,1.0],"solver":"lbfgs","max_iter":3000,"tol":1e-7},
+    "hist_gradient_boosting": {"leaf_candidates":[7,15,31],"max_iter":100,"learning_rate":0.05,"min_samples_leaf":50,"max_bins":64,"l2_regularization":1.0,"early_stopping":false}
+  },
+  "model_selection": "Minimum unweighted log loss on selection years; three candidates per full model, equal development rows; no model refit on later partitions",
+  "calibration": "Separate calibration year, weakly regularized logistic mapping of probability logits, nonnegative slope; report raw and calibrated probabilities",
+  "policy": {"false_negative_weight":100.0,"false_positive_weight":1.0,"purpose":"Illustrative monitoring cost, not measured financial loss or deployment utility","ties":"Higher threshold; less monitoring"},
+  "capacity_diagnostic": "At most the highest ceil(1% of banks) scores per annual test cohort; report actual counts and zero-failure cohorts",
+  "primary_comparison": "Calibrated gradient boosting minus calibrated full logistic; AUC, average precision, Brier, log loss, illustrative monitoring cost",
+  "uncertainty": {"replicates":500,"units":["CERT","prediction_date"],"method":"Separate paired cluster percentile intervals; no iid-row uncertainty or joint-dependence claim"},
+  "seed":20261010,
+  "source_access": "Official public FDIC BankFind API; no registration, no credential use; complete pagination and snapshot-index/row-key checks",
+  "source_probes_before_registration": "API/schema checks inspected two 2023 report rows and one 2000 development row, plus documented fields and metadata; no model predictions, final outcomes, or performance statistics were examined.",
+  "stop_rules": ["Do not modify frozen test years, features, models or policies after scores are observed","Stop on source/schema/pagination/duplicate/maturity failure","Retain negative findings and all final test cohorts","Publish only the registered target, revision/availability and population limitations"]
+}

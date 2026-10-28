@@ -1,0 +1,851 @@
+{
+  "protocol_sha256": "5a63d52ee80a4ac593830e89bb56ddf280911b8c5c33187e14a69749ad12c1d2",
+  "source_extracts": [
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/1992.json.gz",
+      "bytes": 920672,
+      "sha256": "e483ac4ab986c1a6662dd216fa045c15c935c52a1df97ca3f1b59202c01c6c2e",
+      "rows": 14028
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/1993.json.gz",
+      "bytes": 878235,
+      "sha256": "4f0254f04f3be6b7149e74188581c75bddbc16e82d1b1cd6b29434f50d28c197",
+      "rows": 13388
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/1994.json.gz",
+      "bytes": 831942,
+      "sha256": "582c5bbbfc848fb4940425d26b520e21b445de700d04b16178b4a0d5c87c63b4",
+      "rows": 12708
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/1995.json.gz",
+      "bytes": 791472,
+      "sha256": "61046e69c292393c6971f11cd83ad5b2a79c99dc1e092b391925a553e9dbe806",
+      "rows": 12076
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/1996.json.gz",
+      "bytes": 757398,
+      "sha256": "6bd9be9e747b9a122eaa89a7744a180681b12771d9322fa65ca5771386e6848d",
+      "rows": 11561
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/1997.json.gz",
+      "bytes": 722008,
+      "sha256": "16c210cf1e0c9f8c30178210f966430bc8eb28b945d9e5f3b011061c873c20ab",
+      "rows": 11046
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/1998.json.gz",
+      "bytes": 691661,
+      "sha256": "6342b06087b3781c81ffd5209c269cc6ccc9c6e8781742053cd83608ac6866b1",
+      "rows": 10584
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/1999.json.gz",
+      "bytes": 673842,
+      "sha256": "7b94c625f10a6cd0b486bc9df4844dc49745af13b277ed0a87478a7605d0f4f2",
+      "rows": 10344
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2000.json.gz",
+      "bytes": 652225,
+      "sha256": "26386d186448db20792f99e9094ad8ed197351b5d7f0f9e7fc3256a42a954fee",
+      "rows": 10020
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2001.json.gz",
+      "bytes": 636606,
+      "sha256": "8392463f531c4387e02a7eb4e5e48e03fe7a17579ce2c1c92bea4346455bc4a0",
+      "rows": 9731
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2002.json.gz",
+      "bytes": 619070,
+      "sha256": "ced136c0f691a67431730baff311de9815999ef0e7493febac06999e05a4e551",
+      "rows": 9464
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2003.json.gz",
+      "bytes": 608379,
+      "sha256": "3954685a8d27a09d9a99eaf89592eb2304db4d14165b914917ea419a34f36506",
+      "rows": 9296
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2004.json.gz",
+      "bytes": 593350,
+      "sha256": "7a3a3ed7959f1b6fee806110a23c849d250f9abd226786e81406ce71832db9a8",
+      "rows": 9084
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2005.json.gz",
+      "bytes": 582820,
+      "sha256": "7a449f49d6d44b0c6615003db999d3fc9cd800d48b4e1dd44a1e39b1553b2ab2",
+      "rows": 8938
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2007.json.gz",
+      "bytes": 564451,
+      "sha256": "f60ce6230b00ec880c245cc748dfcaa535d3f12e9e3fd6a2e3f88259ff9bdb4e",
+      "rows": 8631
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2008.json.gz",
+      "bytes": 553499,
+      "sha256": "7801d4b02628e462756556c3b3e81342b83ba59093fca23b05fe780e55eee62d",
+      "rows": 8395
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2010.json.gz",
+      "bytes": 513741,
+      "sha256": "b06b6f097754587ecf18ee8b4bb5e3338e18f8f64d964b270a1138060a24f123",
+      "rows": 7747
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2012.json.gz",
+      "bytes": 475194,
+      "sha256": "aa9d9cecde082a80dba82674ed0fb086fd3be6d57607859b699bf9a78f0ee140",
+      "rows": 7166
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2014.json.gz",
+      "bytes": 434958,
+      "sha256": "6036645af8d9d34a230e958dcffd86e1ded2a9c2d517dae5848e8f9c321bdca5",
+      "rows": 6587
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2015.json.gz",
+      "bytes": 412070,
+      "sha256": "e11bffea0d750c2213daacfa66796680b5e842d07191e7348088ec2d8287437a",
+      "rows": 6255
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2016.json.gz",
+      "bytes": 393129,
+      "sha256": "aa781b86463d6caf1ec01f986285e213a1e8fb51a58afcd544e29de323963b1b",
+      "rows": 5983
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2017.json.gz",
+      "bytes": 376666,
+      "sha256": "405f386e06276a0c845d8d57234a89c21bb639924f82a5a0f6bf97dbc1c84494",
+      "rows": 5738
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2018.json.gz",
+      "bytes": 358329,
+      "sha256": "c47ff24a3d644a02c70a645ab57b79954a62af25ed2aee0b7c5dd4b3f1ead391",
+      "rows": 5473
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2019.json.gz",
+      "bytes": 342730,
+      "sha256": "30052ff3c38a3fba242e597876c3ba62bc3cf950fd414ea836733b0da022c7aa",
+      "rows": 5244
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2020.json.gz",
+      "bytes": 332117,
+      "sha256": "63016a6cdff31278224e92d35296507c5043ea82106c4254025a31e30f3dc25b",
+      "rows": 5067
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2021.json.gz",
+      "bytes": 320780,
+      "sha256": "ef32c42baaa314cf4ff5342bc74051bc2f59f2b64a4baf37fe7b664a395e700f",
+      "rows": 4904
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2022.json.gz",
+      "bytes": 310013,
+      "sha256": "9cadb4a675ffbf9cbca47a7ab4828ccbe0f3544974218dbb9e74a3b6ec56e8e2",
+      "rows": 4773
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2023.json.gz",
+      "bytes": 304293,
+      "sha256": "ac651696a2b4fc2b0b6270b174ef8990efbf068abe0add4e955803c5ae212949",
+      "rows": 4658
+    },
+    {
+      "kind": "financials",
+      "path": "reference/fdic_temporal/source_financials/2024.json.gz",
+      "bytes": 298114,
+      "sha256": "3f1c377147b28e899dd134145fe345959dac08274f2c416cf36f75a2992c6134",
+      "rows": 4560
+    },
+    {
+      "kind": "institutions",
+      "path": "reference/fdic_temporal/institutions.json.gz",
+      "bytes": 341580,
+      "sha256": "9c5562c8072645da558dae032b4e4d6c1c021c264fe502ff5907fccfbcc63406",
+      "rows": 27835
+    },
+    {
+      "kind": "failures",
+      "path": "reference/fdic_temporal/failures.json.gz",
+      "bytes": 37396,
+      "sha256": "d8ad555bc8ce49d62198e47506d5556e238d507cdb6bacd55df71903583b3799",
+      "rows": 4117
+    }
+  ],
+  "source_receipt": {
+    "captured_utc": "2026-10-10T15:26:22.587515+00:00",
+    "protocol_sha256": "5a63d52ee80a4ac593830e89bb56ddf280911b8c5c33187e14a69749ad12c1d2",
+    "financials": [
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 14028,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/1992/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19921231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2638858,
+            "sha256": "f2000d091f998c141153d509c389c6230d742bfe7dd2973b8c2e3436a48d24ee",
+            "records": 10000
+          },
+          {
+            "path": "data/fdic_temporal/raw/1992/financials_10000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19921231&limit=10000&offset=10000&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 1062729,
+            "sha256": "38579aae5085d51b6d000ad1b918c5a04fd1f39fa9ffe7d222b875ee11495dc4",
+            "records": 4028
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 13388,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/1993/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19931231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2638953,
+            "sha256": "355d3c94748a2fc2ea10b5d82201e026af995f8148e1b0df04165771726b9e9d",
+            "records": 10000
+          },
+          {
+            "path": "data/fdic_temporal/raw/1993/financials_10000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19931231&limit=10000&offset=10000&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 894558,
+            "sha256": "661722ac0531230603cc61b7ecef38c9a44b74d5ccc88e827deb6afd913b10da",
+            "records": 3388
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 12708,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/1994/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19941231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2638474,
+            "sha256": "ca1bf89677ffbfb29d9a29aab377ad59ddfcc2f43f4608d76ffe6e450d2e5d76",
+            "records": 10000
+          },
+          {
+            "path": "data/fdic_temporal/raw/1994/financials_10000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19941231&limit=10000&offset=10000&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 715005,
+            "sha256": "43584061b3156d09d4213e11ea33c682a4f09110befee4b6f3fe10915578fc21",
+            "records": 2708
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 12076,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/1995/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19951231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2641602,
+            "sha256": "a42d9d08e16217ca66c976ca232902b14dc74423bc724714b98ac98e1dcad26d",
+            "records": 10000
+          },
+          {
+            "path": "data/fdic_temporal/raw/1995/financials_10000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19951231&limit=10000&offset=10000&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 546906,
+            "sha256": "7f960245bf7c6acae7cf3a02e97013e02e4e283844d5e7d6f51269bdf93684f1",
+            "records": 2076
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 11561,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/1996/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19961231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2645854,
+            "sha256": "fe979a51c02c7f0cab9efbf2b755fc0f5728d146e9a7ad868a8b568a69fe2732",
+            "records": 10000
+          },
+          {
+            "path": "data/fdic_temporal/raw/1996/financials_10000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19961231&limit=10000&offset=10000&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 408098,
+            "sha256": "fd50094aef9fdc5ff8f3344c07e52ea4ad7a1cf3d468ee535ad0bf1906813f04",
+            "records": 1561
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 11046,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/1997/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19971231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2646509,
+            "sha256": "47c679559289a66db478894f7c12cedc8d7fab1974f97c2c138d096d0424bae2",
+            "records": 10000
+          },
+          {
+            "path": "data/fdic_temporal/raw/1997/financials_10000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19971231&limit=10000&offset=10000&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 268754,
+            "sha256": "b6f040cab59ced2048f53f512dc1f25ea278a12eb39df33cd8379eb6b00b2d09",
+            "records": 1046
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 10584,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/1998/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19981231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2645761,
+            "sha256": "cb2704f3536cc985ea66a940eeac2a0fa04162f19829ef312505b2d5ac1882ac",
+            "records": 10000
+          },
+          {
+            "path": "data/fdic_temporal/raw/1998/financials_10000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19981231&limit=10000&offset=10000&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 148019,
+            "sha256": "318d550da7a5d47700639c53bfeb08e9ca05773c9ed94805fc72ffb849861297",
+            "records": 584
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 10344,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/1999/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19991231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2641630,
+            "sha256": "69dbc8b511424455995979f7b15e68453b13b065d26bfc9ea6289e36d5b1691c",
+            "records": 10000
+          },
+          {
+            "path": "data/fdic_temporal/raw/1999/financials_10000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A19991231&limit=10000&offset=10000&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 86940,
+            "sha256": "42db633072b04803ebda89ce93bdfe009f7dc9de2974fb5835bc3d35188d5c04",
+            "records": 344
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 10020,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2000/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20001231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2637427,
+            "sha256": "51f1ba5955d9266de070bd0f58839248bb877881a267f2edf9f19131dec24754",
+            "records": 10000
+          },
+          {
+            "path": "data/fdic_temporal/raw/2000/financials_10000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20001231&limit=10000&offset=10000&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 5457,
+            "sha256": "b44dfaed3853916362a2d45d0a2b750eac3614ed0a46e43462f19c2978a7e39e",
+            "records": 20
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 9731,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2001/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20011231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2571527,
+            "sha256": "8856617f71160d8e898598b032842c9526cdec2ee49aaf04f3c5927f876b3a55",
+            "records": 9731
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 9464,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2002/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20021231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2502124,
+            "sha256": "136f999c3bc3c12bb268b5ea250b110f26607179c36f69862526699916a2ef80",
+            "records": 9464
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 9296,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2003/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20031231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2459313,
+            "sha256": "dc103139785a80a2187f49185c2a2217d83677ac827fd726f382579462516d8a",
+            "records": 9296
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 9084,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2004/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20041231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2402738,
+            "sha256": "b7b2e75b754e660e26c895278bf130503a7395447581a41dbe8646fb97b8ad8d",
+            "records": 9084
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 8938,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2005/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20051231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2363026,
+            "sha256": "47fb65550e45d4a9f7d63cc2c0a6ffb98dd19f936865001870bb0cd10b37f9d8",
+            "records": 8938
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 8631,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2007/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20071231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2284920,
+            "sha256": "84691cc0aeee8a8dcb585acccbdce630c86dcc09116666540fb4a1997baf5953",
+            "records": 8631
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 8395,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2008/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20081231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2229991,
+            "sha256": "42ec3754110cf3edee489506f00904c530c657b663fd1a8d747577e37723df11",
+            "records": 8395
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 7747,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2010/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20101231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 2063458,
+            "sha256": "d9aa303a3d228e6b16b19e45175d5f9369d60be1ca83c83816a315eeccf08965",
+            "records": 7747
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 7166,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2012/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20121231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 1911284,
+            "sha256": "9b0294ceadad60c92bb9ffd347a059cbe0c41394e8aa544e4b4453d03ab4d1e0",
+            "records": 7166
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 6587,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2014/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20141231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 1757637,
+            "sha256": "0161579be839a199496ed68d5b789ee11f2fa190b48553430d16fd4c4574f43c",
+            "records": 6587
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 6255,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2015/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20151231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 1669150,
+            "sha256": "a42fbcfa723288aac2d148f1233a6e3244587f555de710d2aabe2442af15b48f",
+            "records": 6255
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 5983,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2016/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20161231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 1596664,
+            "sha256": "b3a4283de79bf5c340c3a0fbaa52fc12a79b5db28da607e25e4904d1a7fb97ec",
+            "records": 5983
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 5738,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2017/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20171231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 1531895,
+            "sha256": "7e581d6af045beffcc59675d1840bacbfe0154c06a2b1e1435f4e1eb139798b4",
+            "records": 5738
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 5473,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2018/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20181231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 1460881,
+            "sha256": "f60c218e9555697c047c76d59523ee87b675feafc3b45631450e30a588789c75",
+            "records": 5473
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 5244,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2019/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20191231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 1400175,
+            "sha256": "5025d79bf31863b871625cc0460ec028ad4d85f808fe31bafa8abc43532d82ca",
+            "records": 5244
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 5067,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2020/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20201231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 1355666,
+            "sha256": "31192658ac2d59a28a44f7eeb89edf456eae6f6339e67a525980461180fea984",
+            "records": 5067
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 4904,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2021/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20211231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 1312300,
+            "sha256": "4b7d29155acdd6665311390c8223696347272830511637c4f2768ac46b535f57",
+            "records": 4904
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 4773,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2022/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20221231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 1275283,
+            "sha256": "470bde20f2762648f8ca091845fbb0710d3769ecda25eb6581919ab1316fb60e",
+            "records": 4773
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 4658,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2023/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20231231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 1245234,
+            "sha256": "e79dfd49640d460cf15eba82be08977230e487304cdc552398cb1ffb3318acb6",
+            "records": 4658
+          }
+        ]
+      },
+      {
+        "endpoint": "financials",
+        "index": {
+          "name": "risview_20260819185831",
+          "createTimestamp": "2026-08-19T18:58:33Z"
+        },
+        "records": 4560,
+        "pages": [
+          {
+            "path": "data/fdic_temporal/raw/2024/financials_00000.json",
+            "url": "https://api.fdic.gov/banks/financials?fields=CERT%2CREPDTE%2CASSET%2CEQ%2CLNLSNET%2CDEP%2CCHBAL%2CSC%2CNPERFV%2CROA%2CNIMY%2CENDEFYMD%2CBKCLASS&filters=REPDTE%3A20241231&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+            "bytes": 1219902,
+            "sha256": "4535a2781fc75a54827fc28c8aee134f124784c19bc0d727bf77035ee75f996a",
+            "records": 4560
+          }
+        ]
+      }
+    ],
+    "institutions": {
+      "endpoint": "institutions",
+      "index": {
+        "name": "institutions_20261009090008",
+        "createTimestamp": "2026-10-09T12:00:05Z"
+      },
+      "records": 27835,
+      "pages": [
+        {
+          "path": "data/fdic_temporal/raw/institutions/institutions_00000.json",
+          "url": "https://api.fdic.gov/banks/institutions?fields=CERT%2CACTIVE%2CENDEFYMD%2CESTYMD%2CINSDATE&filters=&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+          "bytes": 1255992,
+          "sha256": "dd71927892c1f4ae2ea6ad844decb4a3d232ebab1ea7ac6a8f1e5397826f8d43",
+          "records": 10000
+        },
+        {
+          "path": "data/fdic_temporal/raw/institutions/institutions_10000.json",
+          "url": "https://api.fdic.gov/banks/institutions?fields=CERT%2CACTIVE%2CENDEFYMD%2CESTYMD%2CINSDATE&filters=&limit=10000&offset=10000&sort_by=CERT&sort_order=ASC&format=json",
+          "bytes": 1270254,
+          "sha256": "c72183dec1e364d5011237b7e7e00a4630285b5582e9e9885c77f4267c116b3e",
+          "records": 10000
+        },
+        {
+          "path": "data/fdic_temporal/raw/institutions/institutions_20000.json",
+          "url": "https://api.fdic.gov/banks/institutions?fields=CERT%2CACTIVE%2CENDEFYMD%2CESTYMD%2CINSDATE&filters=&limit=10000&offset=20000&sort_by=CERT&sort_order=ASC&format=json",
+          "bytes": 995299,
+          "sha256": "04ec34881a542cc73773ec1da33fdbdce1192d09cf40438d2902b3728eae7fc3",
+          "records": 7835
+        }
+      ]
+    },
+    "failures": {
+      "endpoint": "failures",
+      "index": {
+        "name": "failures_1787667198788",
+        "createTimestamp": "2026-08-25T14:13:18Z"
+      },
+      "records": 4117,
+      "pages": [
+        {
+          "path": "data/fdic_temporal/raw/failures/failures_00000.json",
+          "url": "https://api.fdic.gov/banks/failures?fields=CERT%2CFAILDATE%2CRESTYPE%2CFAILYR&filters=&limit=10000&offset=0&sort_by=CERT&sort_order=ASC&format=json",
+          "bytes": 432047,
+          "sha256": "74f6e426fcce0ecf4aa2e9d4102fe1772df3543cc86ec16f0499080f25e58ec7",
+          "records": 4117
+        }
+      ]
+    },
+    "combined": {
+      "financials": {
+        "path": "data/fdic_temporal/financials.json",
+        "sha256": "7cea42091665395e4d8a5bcfd2a1c68faf47f7956ca0bfbb47f699d25b7b97dd",
+        "bytes": 59887803
+      },
+      "institutions": {
+        "path": "data/fdic_temporal/institutions.json",
+        "sha256": "623d50771abcd80dd69ad54a4c38363724b7aa8dab7e1a9c69d5c16fa97f4cf7",
+        "bytes": 2991924
+      },
+      "failures": {
+        "path": "data/fdic_temporal/failures.json",
+        "sha256": "1a917e69abb715cc97b795856a18768f30ade1c10ac1785c87c80b5240d8b43f",
+        "bytes": 353590
+      }
+    },
+    "scope": "Current historical-source snapshot, not an archive of values first released on each prediction date; raw bodies are not redistributed."
+  },
+  "extract": "Compact selected original source objects; every predictor/label is rebuilt from these. Full API response envelopes/schemas are not redistributed. These are current historical values, not original-release vintages."
+}

@@ -1,46 +1,13 @@
-# Model-validation decision memo
+# Decision memo — fixed bank-failure monitoring model
 
-Prasanna K · 18 October 2026
+**Recommendation: restrict to retrospective research and independent challenge; do not deploy the unchanged monitoring rule.**
 
-**Decision: restrict both models to historical research/ranking diagnostics;
-reject unchanged probabilities for operational expected-loss or capital use.**
+The intended decision is whether the model can justify a historical bank-monitoring workflow. On all 57,896 final observations, calibrated boosting ranks failures reasonably well (ROC AUC 0.916) and improves Brier loss against calibrated full logistic. That comparison does not establish usable future probabilities or monitoring coverage.
 
-The six-vintage study audits 300,000 Freddie Mac loans and 20.15 million monthly
-records. It compares a fixed logistic baseline with a bounded histogram-boosting
-challenger, unchanged/adaptation-recalibrated/retrained variants, chronological
-validation, a primary 2020 stress test and a separate 2023 transport test.
+The operational counterexample is direct: in the post-hoc 2022–2025 prediction cohorts, the fixed rule caught 1 of 10 failures. It predicted about 3.00 events where 10 occurred. The full set of failures remains visible in the explorer and machine-readable case audit. No favorable subset replaces it.
 
-Validation selects unchanged logistic and retrained boosting. The predeclared
-.0001 Brier simplicity tolerance recommends logistic. That recommendation was
-sealed with both test prediction files before final evaluation and remains fixed.
+The original policy uses assumed 100:1 missed-failure/false-positive costs. These are not estimated losses or measured benefits of intervening. Bank-cluster uncertainty for the difference in that cost crosses zero. Original release vintages, real publication times, operating capacity, intervention effects and current-regime validation are absent. A prototype cannot substitute for them.
 
-On 40,059 known outcomes in 2020, boosting Brier is .045743 versus .046455 for
-logistic. The paired difference is −.000711822, with a 2,000-loan-bootstrap 95%
-interval [−.000919710, −.000515400]. This is a meaningful historical comparison,
-but observed events are 6.155 and 8.324 times predicted respectively. AUCs of
-.7155 and .6930 do not offset that probability failure. At 5% review capacity,
-boosting captures 402/1,946 known positives; logistic captures 383/1,946. These
-are allocation diagnostics, not causal effects of review.
+Use the artifact to inspect temporal controls, calibration transport, rare-event metrics and governance failure handling. A later extension would first define and seal new source availability, cohorts, policies and use constraints, then evaluate without modifying this final test. No recommendation to buy, sell, lend to or avoid any current institution follows from these historical scores.
 
-The unchanged 2023 transport check favors boosting in Brier too, while observed
-events remain 1.840 times expected for boosting and 2.297 for logistic. It is
-secondary evidence and cannot be used to choose a replacement model. There
-are seven unresolved outcomes in 2020 and six in 2023; both fractions are below
-the fixed 2% veto. Explicit worst/best-case bounds accompany the known-case scores.
-
-No unexplained schema or linkage failure is observed. The original 2012 cohort
-reproduces byte for byte; all full fits converge. One report-metadata lookup
-was repaired transparently after the first primary evaluation attempt, with
-all models, predictions and evaluation rules unchanged.
-
-The data are a later-revised July 2026 release of originated US mortgages.
-Historical-release availability, rejected-applicant outcomes, Indian portability,
-regulatory default, fairness and intervention effectiveness are not established.
-Loan-bootstrap intervals can understate common-shock dependence. Conditional
-severity/cost scenarios are illustrative and must not be treated as provisions,
-achieved savings or live borrower decisions.
-
-The credible project result is the detection of monitoring failure under a
-changed population—not a claim that a higher AUC or a nonlinear model is safe
-to deploy. A new independently held-out study would be required for operational
-probability approval.
+Evidence: [technical validation](VALIDATION_REPORT.md), [execution receipt](execution_receipt.json), [independent review](independent_review.json), [frozen all-case audit](../bank_monitoring/reference/fdic_temporal/failure_cases.csv).

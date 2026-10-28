@@ -1,0 +1,43 @@
+{
+  "started_at_utc": "2026-10-28T09:46:11.216881+00:00",
+  "completed_at_utc": "2026-10-28T09:46:35.444390+00:00",
+  "elapsed_seconds": 24.227265132998582,
+  "command": "python scripts/reproduce.py",
+  "status": "passed",
+  "execution": "Full pinned-source panel reconstruction, all registered fits/calibration/policy, final predictions and paired bootstrap, complete descriptive audit, independent score/cohort/case review.",
+  "max_probability_error_from_original": 5.658584711909498e-12,
+  "eligible_rows": 237253,
+  "final_rows": 57896,
+  "independent_numeric_and_case_checks": 1470,
+  "review_sha256": "e1b5001b2c8af9709a9fe09080e273baae10183cbaddc8327a7e760ee655a3ea",
+  "protocol_sha256": "5a63d52ee80a4ac593830e89bb56ddf280911b8c5c33187e14a69749ad12c1d2",
+  "frozen_manifest_sha256": "f9cf68545aed5c22ac8a0f8017ea9cfd5b1d8d79e99021cca4f58369b5a8afec",
+  "review_source_sha256": {
+    "validation/__init__.py": "ee6362c2dce545f83bc663b289e193a99f650b3335fedbfe2d90a82d8cb5f74f",
+    "validation/review.py": "a15719cd3ad001e8c1dee7b760b6f6063fea4b040b5649576b46788c55cc4ba4",
+    "scripts/reproduce.py": "e33a33cf4e32342ced0f92dcc07f6859ee6c2400d00d07bef1aa2d0ad1716971",
+    "scripts/build_presentation.py": "9a9900d166f5369756c4dacab1f1bea977d53c5207dfe857acc40262fdda8458",
+    "scripts/release_guard.py": "63f17c42eb91535c8bf4515c9a902bfeebeec17235488dc737958f0ca5240a27"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "2",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "api_calls_required": 0,
+  "paid_resources_used": false,
+  "limitations": [
+    "Uses pinned later-revised source objects, not original publication vintages.",
+    "Numerical replay tolerance was frozen in the original code (rtol 1e-8, atol 1e-9); this is not bitwise model identity.",
+    "Independent review is a second implementation within one portfolio, not an external institutional endorsement.",
+    "Governance status is a research restriction, not proof of production safety."
+  ]
+}

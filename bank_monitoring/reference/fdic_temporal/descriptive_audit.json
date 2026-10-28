@@ -1,0 +1,786 @@
+{
+  "scope": "Descriptive audit after the registered final evaluation; no refit, tuning or new untouched test.",
+  "late_group": "Post hoc prediction dates 2022-04-01 through 2025-04-01, motivated by observed annual diagnostics.",
+  "models": {
+    "constant": {
+      "expected_failure_count": 41.03493897829139,
+      "observed_failure_count": 35,
+      "policy_monitor_count": 0,
+      "policy_caught": 0,
+      "policy_false_positives": 0,
+      "policy_precision": null,
+      "annual_capacity_total": 584,
+      "capacity_caught_total": 1,
+      "late_posthoc": {
+        "rows": 18503,
+        "failures": 10,
+        "expected_failure_count": 13.114368452316665,
+        "policy_monitor_count": 0,
+        "policy_caught": 0,
+        "capacity_caught": 0
+      },
+      "annual": [
+        {
+          "prediction_date": "2015-04-01",
+          "rows": 6405,
+          "failures": 5,
+          "expected_failure_count": 4.539670860784102,
+          "monitor_count": 0,
+          "caught_by_frozen_policy": 0,
+          "capacity": 65,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2016-04-01",
+          "rows": 6114,
+          "failures": 7,
+          "expected_failure_count": 4.3334188357274,
+          "monitor_count": 0,
+          "caught_by_frozen_policy": 0,
+          "capacity": 62,
+          "caught_at_capacity": 1
+        },
+        {
+          "prediction_date": "2017-04-01",
+          "rows": 5841,
+          "failures": 5,
+          "expected_failure_count": 4.139924667890702,
+          "monitor_count": 0,
+          "caught_by_frozen_policy": 0,
+          "capacity": 59,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2018-04-01",
+          "rows": 5597,
+          "failures": 0,
+          "expected_failure_count": 3.966984825575116,
+          "monitor_count": 0,
+          "caught_by_frozen_policy": 0,
+          "capacity": 56,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2019-04-01",
+          "rows": 5346,
+          "failures": 5,
+          "expected_failure_count": 3.7890835943406413,
+          "monitor_count": 0,
+          "caught_by_frozen_policy": 0,
+          "capacity": 54,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2020-04-01",
+          "rows": 5112,
+          "failures": 3,
+          "expected_failure_count": 3.6232314504806133,
+          "monitor_count": 0,
+          "caught_by_frozen_policy": 0,
+          "capacity": 52,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2021-04-01",
+          "rows": 4978,
+          "failures": 0,
+          "expected_failure_count": 3.5282562911761532,
+          "monitor_count": 0,
+          "caught_by_frozen_policy": 0,
+          "capacity": 50,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2022-04-01",
+          "rows": 4794,
+          "failures": 2,
+          "expected_failure_count": 3.3978426395939083,
+          "monitor_count": 0,
+          "caught_by_frozen_policy": 0,
+          "capacity": 48,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2023-04-01",
+          "rows": 4674,
+          "failures": 3,
+          "expected_failure_count": 3.3127902581272277,
+          "monitor_count": 0,
+          "caught_by_frozen_policy": 0,
+          "capacity": 47,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2024-04-01",
+          "rows": 4572,
+          "failures": 3,
+          "expected_failure_count": 3.2404957338805485,
+          "monitor_count": 0,
+          "caught_by_frozen_policy": 0,
+          "capacity": 46,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2025-04-01",
+          "rows": 4463,
+          "failures": 2,
+          "expected_failure_count": 3.1632398207149803,
+          "monitor_count": 0,
+          "caught_by_frozen_policy": 0,
+          "capacity": 45,
+          "caught_at_capacity": 0
+        }
+      ]
+    },
+    "capital_only": {
+      "expected_failure_count": 40.05344406820557,
+      "observed_failure_count": 35,
+      "policy_monitor_count": 1470,
+      "policy_caught": 20,
+      "policy_false_positives": 1450,
+      "policy_precision": 0.013605442176870748,
+      "annual_capacity_total": 584,
+      "capacity_caught_total": 18,
+      "late_posthoc": {
+        "rows": 18503,
+        "failures": 10,
+        "expected_failure_count": 12.98160477598586,
+        "policy_monitor_count": 1198,
+        "policy_caught": 3,
+        "capacity_caught": 2
+      },
+      "annual": [
+        {
+          "prediction_date": "2015-04-01",
+          "rows": 6405,
+          "failures": 5,
+          "expected_failure_count": 4.419886864143281,
+          "monitor_count": 80,
+          "caught_by_frozen_policy": 4,
+          "capacity": 65,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2016-04-01",
+          "rows": 6114,
+          "failures": 7,
+          "expected_failure_count": 4.213649479594222,
+          "monitor_count": 57,
+          "caught_by_frozen_policy": 5,
+          "capacity": 62,
+          "caught_at_capacity": 5
+        },
+        {
+          "prediction_date": "2017-04-01",
+          "rows": 5841,
+          "failures": 5,
+          "expected_failure_count": 4.027909174719758,
+          "monitor_count": 50,
+          "caught_by_frozen_policy": 3,
+          "capacity": 59,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2018-04-01",
+          "rows": 5597,
+          "failures": 0,
+          "expected_failure_count": 3.8485873344488035,
+          "monitor_count": 33,
+          "caught_by_frozen_policy": 0,
+          "capacity": 56,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2019-04-01",
+          "rows": 5346,
+          "failures": 5,
+          "expected_failure_count": 3.6615496414132327,
+          "monitor_count": 21,
+          "caught_by_frozen_policy": 2,
+          "capacity": 54,
+          "caught_at_capacity": 2
+        },
+        {
+          "prediction_date": "2020-04-01",
+          "rows": 5112,
+          "failures": 3,
+          "expected_failure_count": 3.472430938038288,
+          "monitor_count": 9,
+          "caught_by_frozen_policy": 3,
+          "capacity": 52,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2021-04-01",
+          "rows": 4978,
+          "failures": 0,
+          "expected_failure_count": 3.4278258598621285,
+          "monitor_count": 22,
+          "caught_by_frozen_policy": 0,
+          "capacity": 50,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2022-04-01",
+          "rows": 4794,
+          "failures": 2,
+          "expected_failure_count": 3.323369493497772,
+          "monitor_count": 23,
+          "caught_by_frozen_policy": 0,
+          "capacity": 48,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2023-04-01",
+          "rows": 4674,
+          "failures": 3,
+          "expected_failure_count": 3.3207642816776834,
+          "monitor_count": 574,
+          "caught_by_frozen_policy": 1,
+          "capacity": 47,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2024-04-01",
+          "rows": 4572,
+          "failures": 3,
+          "expected_failure_count": 3.213749909562249,
+          "monitor_count": 335,
+          "caught_by_frozen_policy": 1,
+          "capacity": 46,
+          "caught_at_capacity": 1
+        },
+        {
+          "prediction_date": "2025-04-01",
+          "rows": 4463,
+          "failures": 2,
+          "expected_failure_count": 3.1237210912481563,
+          "monitor_count": 266,
+          "caught_by_frozen_policy": 1,
+          "capacity": 45,
+          "caught_at_capacity": 1
+        }
+      ]
+    },
+    "logistic_raw": {
+      "expected_failure_count": 39.552011428793904,
+      "observed_failure_count": 35,
+      "policy_monitor_count": 445,
+      "policy_caught": 18,
+      "policy_false_positives": 427,
+      "policy_precision": 0.04044943820224719,
+      "annual_capacity_total": 584,
+      "capacity_caught_total": 17,
+      "late_posthoc": {
+        "rows": 18503,
+        "failures": 10,
+        "expected_failure_count": 10.203527514120575,
+        "policy_monitor_count": 42,
+        "policy_caught": 0,
+        "capacity_caught": 0
+      },
+      "annual": [
+        {
+          "prediction_date": "2015-04-01",
+          "rows": 6405,
+          "failures": 5,
+          "expected_failure_count": 5.202886890429446,
+          "monitor_count": 128,
+          "caught_by_frozen_policy": 3,
+          "capacity": 65,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2016-04-01",
+          "rows": 6114,
+          "failures": 7,
+          "expected_failure_count": 4.702464573437794,
+          "monitor_count": 84,
+          "caught_by_frozen_policy": 6,
+          "capacity": 62,
+          "caught_at_capacity": 5
+        },
+        {
+          "prediction_date": "2017-04-01",
+          "rows": 5841,
+          "failures": 5,
+          "expected_failure_count": 4.45085014570482,
+          "monitor_count": 64,
+          "caught_by_frozen_policy": 3,
+          "capacity": 59,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2018-04-01",
+          "rows": 5597,
+          "failures": 0,
+          "expected_failure_count": 4.161227556465638,
+          "monitor_count": 55,
+          "caught_by_frozen_policy": 0,
+          "capacity": 56,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2019-04-01",
+          "rows": 5346,
+          "failures": 5,
+          "expected_failure_count": 3.8916485237763663,
+          "monitor_count": 31,
+          "caught_by_frozen_policy": 3,
+          "capacity": 54,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2020-04-01",
+          "rows": 5112,
+          "failures": 3,
+          "expected_failure_count": 3.8771244002111143,
+          "monitor_count": 28,
+          "caught_by_frozen_policy": 3,
+          "capacity": 52,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2021-04-01",
+          "rows": 4978,
+          "failures": 0,
+          "expected_failure_count": 3.062281824648149,
+          "monitor_count": 13,
+          "caught_by_frozen_policy": 0,
+          "capacity": 50,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2022-04-01",
+          "rows": 4794,
+          "failures": 2,
+          "expected_failure_count": 2.5295648686996124,
+          "monitor_count": 5,
+          "caught_by_frozen_policy": 0,
+          "capacity": 48,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2023-04-01",
+          "rows": 4674,
+          "failures": 3,
+          "expected_failure_count": 2.439879771973013,
+          "monitor_count": 9,
+          "caught_by_frozen_policy": 0,
+          "capacity": 47,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2024-04-01",
+          "rows": 4572,
+          "failures": 3,
+          "expected_failure_count": 2.4640861421182665,
+          "monitor_count": 10,
+          "caught_by_frozen_policy": 0,
+          "capacity": 46,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2025-04-01",
+          "rows": 4463,
+          "failures": 2,
+          "expected_failure_count": 2.7699967313296825,
+          "monitor_count": 18,
+          "caught_by_frozen_policy": 0,
+          "capacity": 45,
+          "caught_at_capacity": 0
+        }
+      ]
+    },
+    "logistic_calibrated": {
+      "expected_failure_count": 166.39751057454163,
+      "observed_failure_count": 35,
+      "policy_monitor_count": 445,
+      "policy_caught": 18,
+      "policy_false_positives": 427,
+      "policy_precision": 0.04044943820224719,
+      "annual_capacity_total": 584,
+      "capacity_caught_total": 17,
+      "late_posthoc": {
+        "rows": 18503,
+        "failures": 10,
+        "expected_failure_count": 39.1841253800424,
+        "policy_monitor_count": 42,
+        "policy_caught": 0,
+        "capacity_caught": 0
+      },
+      "annual": [
+        {
+          "prediction_date": "2015-04-01",
+          "rows": 6405,
+          "failures": 5,
+          "expected_failure_count": 24.350555861963443,
+          "monitor_count": 128,
+          "caught_by_frozen_policy": 3,
+          "capacity": 65,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2016-04-01",
+          "rows": 6114,
+          "failures": 7,
+          "expected_failure_count": 21.103076925316685,
+          "monitor_count": 84,
+          "caught_by_frozen_policy": 6,
+          "capacity": 62,
+          "caught_at_capacity": 5
+        },
+        {
+          "prediction_date": "2017-04-01",
+          "rows": 5841,
+          "failures": 5,
+          "expected_failure_count": 19.453176438459185,
+          "monitor_count": 64,
+          "caught_by_frozen_policy": 3,
+          "capacity": 59,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2018-04-01",
+          "rows": 5597,
+          "failures": 0,
+          "expected_failure_count": 17.660740533252387,
+          "monitor_count": 55,
+          "caught_by_frozen_policy": 0,
+          "capacity": 56,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2019-04-01",
+          "rows": 5346,
+          "failures": 5,
+          "expected_failure_count": 16.24605738160922,
+          "monitor_count": 31,
+          "caught_by_frozen_policy": 3,
+          "capacity": 54,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2020-04-01",
+          "rows": 5112,
+          "failures": 3,
+          "expected_failure_count": 16.39861644489346,
+          "monitor_count": 28,
+          "caught_by_frozen_policy": 3,
+          "capacity": 52,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2021-04-01",
+          "rows": 4978,
+          "failures": 0,
+          "expected_failure_count": 12.001161609004843,
+          "monitor_count": 13,
+          "caught_by_frozen_policy": 0,
+          "capacity": 50,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2022-04-01",
+          "rows": 4794,
+          "failures": 2,
+          "expected_failure_count": 9.638941283257115,
+          "monitor_count": 5,
+          "caught_by_frozen_policy": 0,
+          "capacity": 48,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2023-04-01",
+          "rows": 4674,
+          "failures": 3,
+          "expected_failure_count": 9.288393384448188,
+          "monitor_count": 9,
+          "caught_by_frozen_policy": 0,
+          "capacity": 47,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2024-04-01",
+          "rows": 4572,
+          "failures": 3,
+          "expected_failure_count": 9.374848071899876,
+          "monitor_count": 10,
+          "caught_by_frozen_policy": 0,
+          "capacity": 46,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2025-04-01",
+          "rows": 4463,
+          "failures": 2,
+          "expected_failure_count": 10.88194264043723,
+          "monitor_count": 18,
+          "caught_by_frozen_policy": 0,
+          "capacity": 45,
+          "caught_at_capacity": 0
+        }
+      ]
+    },
+    "hist_gradient_boosting_raw": {
+      "expected_failure_count": 24.565660366896484,
+      "observed_failure_count": 35,
+      "policy_monitor_count": 381,
+      "policy_caught": 22,
+      "policy_false_positives": 359,
+      "policy_precision": 0.05774278215223097,
+      "annual_capacity_total": 584,
+      "capacity_caught_total": 23,
+      "late_posthoc": {
+        "rows": 18503,
+        "failures": 10,
+        "expected_failure_count": 4.0746213535359965,
+        "policy_monitor_count": 38,
+        "policy_caught": 1,
+        "capacity_caught": 2
+      },
+      "annual": [
+        {
+          "prediction_date": "2015-04-01",
+          "rows": 6405,
+          "failures": 5,
+          "expected_failure_count": 5.315983104041095,
+          "monitor_count": 101,
+          "caught_by_frozen_policy": 4,
+          "capacity": 65,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2016-04-01",
+          "rows": 6114,
+          "failures": 7,
+          "expected_failure_count": 3.8311727238542312,
+          "monitor_count": 67,
+          "caught_by_frozen_policy": 7,
+          "capacity": 62,
+          "caught_at_capacity": 7
+        },
+        {
+          "prediction_date": "2017-04-01",
+          "rows": 5841,
+          "failures": 5,
+          "expected_failure_count": 2.9476338177276853,
+          "monitor_count": 61,
+          "caught_by_frozen_policy": 4,
+          "capacity": 59,
+          "caught_at_capacity": 4
+        },
+        {
+          "prediction_date": "2018-04-01",
+          "rows": 5597,
+          "failures": 0,
+          "expected_failure_count": 2.47832279192498,
+          "monitor_count": 48,
+          "caught_by_frozen_policy": 0,
+          "capacity": 56,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2019-04-01",
+          "rows": 5346,
+          "failures": 5,
+          "expected_failure_count": 2.514506921010651,
+          "monitor_count": 31,
+          "caught_by_frozen_policy": 3,
+          "capacity": 54,
+          "caught_at_capacity": 4
+        },
+        {
+          "prediction_date": "2020-04-01",
+          "rows": 5112,
+          "failures": 3,
+          "expected_failure_count": 1.9216913608583035,
+          "monitor_count": 23,
+          "caught_by_frozen_policy": 3,
+          "capacity": 52,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2021-04-01",
+          "rows": 4978,
+          "failures": 0,
+          "expected_failure_count": 1.4817282939435403,
+          "monitor_count": 12,
+          "caught_by_frozen_policy": 0,
+          "capacity": 50,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2022-04-01",
+          "rows": 4794,
+          "failures": 2,
+          "expected_failure_count": 0.8832415576148639,
+          "monitor_count": 9,
+          "caught_by_frozen_policy": 0,
+          "capacity": 48,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2023-04-01",
+          "rows": 4674,
+          "failures": 3,
+          "expected_failure_count": 0.835827625745247,
+          "monitor_count": 5,
+          "caught_by_frozen_policy": 0,
+          "capacity": 47,
+          "caught_at_capacity": 1
+        },
+        {
+          "prediction_date": "2024-04-01",
+          "rows": 4572,
+          "failures": 3,
+          "expected_failure_count": 1.1995314542275652,
+          "monitor_count": 13,
+          "caught_by_frozen_policy": 0,
+          "capacity": 46,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2025-04-01",
+          "rows": 4463,
+          "failures": 2,
+          "expected_failure_count": 1.1560207159483205,
+          "monitor_count": 11,
+          "caught_by_frozen_policy": 1,
+          "capacity": 45,
+          "caught_at_capacity": 1
+        }
+      ]
+    },
+    "hist_gradient_boosting_calibrated": {
+      "expected_failure_count": 28.76916921970981,
+      "observed_failure_count": 35,
+      "policy_monitor_count": 381,
+      "policy_caught": 22,
+      "policy_false_positives": 359,
+      "policy_precision": 0.05774278215223097,
+      "annual_capacity_total": 584,
+      "capacity_caught_total": 23,
+      "late_posthoc": {
+        "rows": 18503,
+        "failures": 10,
+        "expected_failure_count": 3.000591336641694,
+        "policy_monitor_count": 38,
+        "policy_caught": 1,
+        "capacity_caught": 2
+      },
+      "annual": [
+        {
+          "prediction_date": "2015-04-01",
+          "rows": 6405,
+          "failures": 5,
+          "expected_failure_count": 7.450353290968895,
+          "monitor_count": 101,
+          "caught_by_frozen_policy": 4,
+          "capacity": 65,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2016-04-01",
+          "rows": 6114,
+          "failures": 7,
+          "expected_failure_count": 5.0949188229688875,
+          "monitor_count": 67,
+          "caught_by_frozen_policy": 7,
+          "capacity": 62,
+          "caught_at_capacity": 7
+        },
+        {
+          "prediction_date": "2017-04-01",
+          "rows": 5841,
+          "failures": 5,
+          "expected_failure_count": 3.522290497176144,
+          "monitor_count": 61,
+          "caught_by_frozen_policy": 4,
+          "capacity": 59,
+          "caught_at_capacity": 4
+        },
+        {
+          "prediction_date": "2018-04-01",
+          "rows": 5597,
+          "failures": 0,
+          "expected_failure_count": 2.799986619990727,
+          "monitor_count": 48,
+          "caught_by_frozen_policy": 0,
+          "capacity": 56,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2019-04-01",
+          "rows": 5346,
+          "failures": 5,
+          "expected_failure_count": 3.2118542700374046,
+          "monitor_count": 31,
+          "caught_by_frozen_policy": 3,
+          "capacity": 54,
+          "caught_at_capacity": 4
+        },
+        {
+          "prediction_date": "2020-04-01",
+          "rows": 5112,
+          "failures": 3,
+          "expected_failure_count": 2.2317656093739853,
+          "monitor_count": 23,
+          "caught_by_frozen_policy": 3,
+          "capacity": 52,
+          "caught_at_capacity": 3
+        },
+        {
+          "prediction_date": "2021-04-01",
+          "rows": 4978,
+          "failures": 0,
+          "expected_failure_count": 1.4574087725520735,
+          "monitor_count": 12,
+          "caught_by_frozen_policy": 0,
+          "capacity": 50,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2022-04-01",
+          "rows": 4794,
+          "failures": 2,
+          "expected_failure_count": 0.5228156408703308,
+          "monitor_count": 9,
+          "caught_by_frozen_policy": 0,
+          "capacity": 48,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2023-04-01",
+          "rows": 4674,
+          "failures": 3,
+          "expected_failure_count": 0.49783844970069296,
+          "monitor_count": 5,
+          "caught_by_frozen_policy": 0,
+          "capacity": 47,
+          "caught_at_capacity": 1
+        },
+        {
+          "prediction_date": "2024-04-01",
+          "rows": 4572,
+          "failures": 3,
+          "expected_failure_count": 1.0683887512564882,
+          "monitor_count": 13,
+          "caught_by_frozen_policy": 0,
+          "capacity": 46,
+          "caught_at_capacity": 0
+        },
+        {
+          "prediction_date": "2025-04-01",
+          "rows": 4463,
+          "failures": 2,
+          "expected_failure_count": 0.9115484948141825,
+          "monitor_count": 11,
+          "caught_by_frozen_policy": 1,
+          "capacity": 45,
+          "caught_at_capacity": 1
+        }
+      ]
+    }
+  }
+}

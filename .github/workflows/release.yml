@@ -1,109 +1,67 @@
-name: Publish audited release
+name: Publish reviewed research release
 on:
-  push:
-    branches: [main]
-    paths: [.github/workflows/release.yml]
   workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing version tag pointing to the reviewed main commit
+        required: true
+        type: string
+      reviewed_commit:
+        description: Exact reviewed 40-character main commit SHA
+        required: true
+        type: string
 permissions: {}
 concurrency:
-  group: audited-release
+  group: reviewed-research-release
   cancel-in-progress: false
+env:
+  RELEASE_TAG: ${{ inputs.tag }}
+  REVIEWED_COMMIT: ${{ inputs.reviewed_commit }}
 jobs:
-  publish:
+  verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    env:
+      PYTHONPATH: .:bank_monitoring
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Check dispatch and existing refs before execution
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/release_guard.py --check
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q
+      - name: Replay pinned source objects, frozen fits and independent validation
+        run: |
+          python scripts/reproduce.py
+          python scripts/build_presentation.py --check
+          node tests/check_explorer.cjs
+      - name: Check refs again after verification
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/release_guard.py --check
+  publish:
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
     permissions:
       contents: write
-      actions: read
-    env:
-      GH_TOKEN: ${{ github.token }}
-      AUDITED_REPOSITORY: "Prasanna-K-123/credit-risk-model-validation"
-      AUDITED_BASELINE: "f22e70ffde1978c5053acecaef188ecce58f7915"
-      RELEASE_TAG: "v1.0.3"
-      RELEASE_TITLE: "Credit Risk Model Validation — v1.0.3"
-      ALLOWED_PATHS: "[\".github/workflows/release.yml\",\".github/workflows/verify.yml\",\"README.md\",\"docs/exports/technical_report.html\",\"reports/TECHNICAL_REPORT.md\",\"reports/publication_status_revision_20261021.json\"]"
-      APPROVED_BLOBS: "{\".github/workflows/verify.yml\":\"cd399b675bd1de84c7e7dbfd7e4ed7dba47cf472\",\"README.md\":\"4a2f1d9ccfd9fe4f1d3df80e7914ec71ddaabefa\",\"docs/exports/technical_report.html\":\"ee71b112da10327427c476f1d7ac3698d44888e7\",\"reports/TECHNICAL_REPORT.md\":\"76e8a90f60ddee0171c812c9e3fac0af95867a7d\",\"reports/publication_status_revision_20261021.json\":\"3f556e0b060b0a488810022fcf7dea7889a91e9b\"}"
-      REQUIRED_WORKFLOWS: "[\"Verify public research\"]"
-      RELEASE_NOTES: |
-        Include the existing three source-intake boundary tests in public CI, alongside the 12 cohort/model tests. These checks cover calendar boundaries, changed schemas, duplicate loan-months, internal gaps and orphan performance keys.
-        
-        Clarify completed publication in the dated technical report and hosted export. Retain the original release-candidate report body, report-builder source and historical reproduction hashes with an explicit presentation-only revision record.
-        
-        Frozen scientific code, inputs, fitted models, prediction seals, empirical results and explorer calculations are unchanged. This release does not claim a new raw-source reproduction.
     steps:
-      - name: Verify reviewed content and successful CI before publishing
-        shell: bash
-        run: |
-          python3 - <<'PY'
-          import json, os, time, urllib.request, urllib.error
-          repo=os.environ['GITHUB_REPOSITORY']
-          sha=os.environ['GITHUB_SHA']
-          def require(condition,message):
-              if not condition:raise RuntimeError(message)
-          def api(path,payload=None,missing=False):
-              request=urllib.request.Request('https://api.github.com/repos/'+repo+path,
-                  data=None if payload is None else json.dumps(payload).encode(),
-                  headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],
-                      'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28',
-                      'User-Agent':'audited-maintenance-release'})
-              try:
-                  with urllib.request.urlopen(request,timeout=30) as response:return json.load(response)
-              except urllib.error.HTTPError as error:
-                  if missing and error.code==404:return None
-                  raise RuntimeError('GitHub API failed (HTTP '+str(error.code)+')') from None
-          require(repo==os.environ['AUDITED_REPOSITORY'],'Unexpected repository')
-          require(os.environ['GITHUB_REF']=='refs/heads/main','Main is required')
-          comparison=api('/compare/'+os.environ['AUDITED_BASELINE']+'...'+sha)
-          require(comparison['status']=='ahead' and comparison['total_commits']==1,
-              'Exactly one reviewed maintenance commit required')
-          allowed=set(json.loads(os.environ['ALLOWED_PATHS']))
-          require({row['filename'] for row in comparison['files']}==allowed and
-              all(row['status'] in ('added','modified') for row in comparison['files']),
-              'Unexpected source changes')
-          tree=api('/git/trees/'+sha+'?recursive=1')
-          require(not tree['truncated'],'Incomplete source tree')
-          actual={row['path']:row['sha'] for row in tree['tree'] if row['type']=='blob'}
-          approved=json.loads(os.environ['APPROVED_BLOBS'])
-          require(all(actual.get(path)==digest for path,digest in approved.items()),
-              'Source differs from reviewed content')
-          required=json.loads(os.environ['REQUIRED_WORKFLOWS'])
-          deadline=time.monotonic()+900
-          verified={}
-          while True:
-              runs=api('/actions/runs?head_sha='+sha+'&per_page=100')['workflow_runs']
-              verified={}
-              for name in required:
-                  candidates=[run for run in runs if run['name']==name and run['head_sha']==sha
-                      and run['head_branch']=='main' and run['event']=='push']
-                  latest=max(candidates,key=lambda run:run['id']) if candidates else None
-                  if latest and latest['status']=='completed':
-                      require(latest['conclusion']=='success','Required workflow failed: '+name)
-                      verified[name]=latest['html_url']
-              if len(verified)==len(required):break
-              require(time.monotonic()<deadline,'Timed out waiting for required checks')
-              time.sleep(10)
-          require(api('/branches/main')['commit']['sha']==sha,'Main changed during verification')
-          tag=os.environ['RELEASE_TAG']
-          ref=api('/git/ref/tags/'+tag,missing=True)
-          if ref is not None:
-              require(ref['object']['type']=='commit' and ref['object']['sha']==sha,
-                  'Existing tag differs; retagging is forbidden')
-          release=api('/releases/tags/'+tag,missing=True)
-          if release is None:
-              release=api('/releases',{'tag_name':tag,'target_commitish':sha,
-                  'name':os.environ['RELEASE_TITLE'],'body':os.environ['RELEASE_NOTES'],
-                  'draft':False,'prerelease':False,'make_latest':'true'})
-          require(not release['draft'] and not release['prerelease'],'Final release required')
-          require(release['tag_name']==tag and release['name']==os.environ['RELEASE_TITLE'],
-              'Release identity differs')
-          require(release['body'].replace('\r\n','\n').strip()==os.environ['RELEASE_NOTES'].strip(),
-              'Release notes differ')
-          ref=api('/git/ref/tags/'+tag)
-          require(ref['object']['type']=='commit' and ref['object']['sha']==sha,
-              'Release tag does not point to the tested commit')
-          require(api('/releases/latest')['id']==release['id'],'Latest release differs')
-          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as summary:
-              summary.write('Published ['+tag+']('+release['html_url']+') after exact source and CI checks.\n\n')
-              for name,url in verified.items():summary.write('- ['+name+']('+url+')\n')
-          print(json.dumps({'tag':tag,'commit':sha,'url':release['html_url'],'required_checks':verified}))
-          PY
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Recheck existing tag and main, then publish without retagging
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/release_guard.py --publish

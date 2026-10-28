@@ -1,0 +1,45 @@
+{
+  "checked_on": "2026-10-10",
+  "official_definitions": [
+    {
+      "url": "https://api.fdic.gov/banks/docs/risview_properties.yaml",
+      "bytes": 616633,
+      "sha256": "b257457e4e821d6a0d9f88ffc4e6e0da80e4ccf67fa394cadb21587b50b23d59"
+    },
+    {
+      "url": "https://api.fdic.gov/banks/docs/institution_properties.yaml",
+      "bytes": 94832,
+      "sha256": "6ed1763c66a9e240904a45712b23d825c0f31beaadb6cd0213fc1bf00b2af1b9"
+    },
+    {
+      "url": "https://api.fdic.gov/banks/docs/failure_properties.yaml",
+      "bytes": 14728,
+      "sha256": "7e3137fb6fc93dd49371b4d032f48fad403efd3d9a7f5cc8ca5480c00807364c"
+    },
+    {
+      "url": "https://api.fdic.gov/banks/docs/swagger.yaml",
+      "bytes": 34749,
+      "sha256": "854500ae68d77185a12fc9260e0bbc0194e3848df0e54086f828656ea508852b"
+    }
+  ],
+  "source_probe_sha256": {
+    "institutions_schema_probe.json": "0edb4e1495c70cf4bf8d65f8388e21028f09dc628150c5e7caac5f44e9df0042",
+    "financials_schema_probe.json": "e895d47bb22a38b86cbbed032e771dff35d54cc2bd3735dd5015f5eff4fc49f5",
+    "development_schema_full.json": "18b55936fe2d6439d309b00a00b2a442fe6bbba05c6bae7e0ebc54b840d50ac6"
+  },
+  "probe_scope": "Small schema/metadata probes only; no fitted model, final labels or final score comparison inspected before registration.",
+  "field_contract": {
+    "NPERFV": "Published nonperforming-assets/total-assets percentage; divide by100",
+    "ROA": "Published annualized income/average-assets percentage; divide by100",
+    "NIMY": "Published annualized net-interest-income/average-earning-assets percentage; divide by100",
+    "NIM": "Monetary net-interest income; excluded instead of treating it as a percentage",
+    "ENDEFYMD": "Inactive/end date for a closed institution; source/label audit only",
+    "RESTYPE": "Failure and Assistance are distinct source resolutions; case-normalized Failure only"
+  },
+  "access": "Official public API documentation currently states no unique API key/registration required. No credential, login or mirror used.",
+  "limits": [
+    "Current historical snapshots may include later revisions",
+    "No independent source audit or FDIC endorsement",
+    "Borrower-level temporal validation remains unresolved"
+  ]
+}

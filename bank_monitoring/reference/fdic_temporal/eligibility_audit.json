@@ -1,0 +1,198 @@
+{
+  "raw_financial_rows": 243449,
+  "eligible_rows": 237253,
+  "unique_certificates": 16219,
+  "exclusions": {
+    "institution_inactive_at_prediction": 2969,
+    "unknown_inactive_date": 359,
+    "unknown_origin_or_insurance_date": 668,
+    "failure_after_registered_inactive_date": 10,
+    "source_before_establishment_or_insurance": 87,
+    "failure_already_occurred": 80,
+    "unmatched_institution": 2023
+  },
+  "failure_coverage": [
+    {
+      "prediction_year": 1993,
+      "listed_failure_certificates": 39,
+      "covered_failure_certificates": 36,
+      "uncovered_certificates": [
+        3733,
+        23796,
+        32731
+      ]
+    },
+    {
+      "prediction_year": 1994,
+      "listed_failure_certificates": 17,
+      "covered_failure_certificates": 17,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 1995,
+      "listed_failure_certificates": 6,
+      "covered_failure_certificates": 6,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 1996,
+      "listed_failure_certificates": 5,
+      "covered_failure_certificates": 5,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 1997,
+      "listed_failure_certificates": 1,
+      "covered_failure_certificates": 1,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 1998,
+      "listed_failure_certificates": 4,
+      "covered_failure_certificates": 4,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 1999,
+      "listed_failure_certificates": 9,
+      "covered_failure_certificates": 8,
+      "uncovered_certificates": [
+        27415
+      ]
+    },
+    {
+      "prediction_year": 2000,
+      "listed_failure_certificates": 6,
+      "covered_failure_certificates": 6,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2001,
+      "listed_failure_certificates": 9,
+      "covered_failure_certificates": 9,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2002,
+      "listed_failure_certificates": 6,
+      "covered_failure_certificates": 6,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2003,
+      "listed_failure_certificates": 5,
+      "covered_failure_certificates": 5,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2004,
+      "listed_failure_certificates": 1,
+      "covered_failure_certificates": 1,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2005,
+      "listed_failure_certificates": 0,
+      "covered_failure_certificates": 0,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2006,
+      "listed_failure_certificates": 1,
+      "covered_failure_certificates": 1,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2008,
+      "listed_failure_certificates": 44,
+      "covered_failure_certificates": 44,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2009,
+      "listed_failure_certificates": 160,
+      "covered_failure_certificates": 160,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2011,
+      "listed_failure_certificates": 82,
+      "covered_failure_certificates": 82,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2013,
+      "listed_failure_certificates": 25,
+      "covered_failure_certificates": 25,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2015,
+      "listed_failure_certificates": 5,
+      "covered_failure_certificates": 5,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2016,
+      "listed_failure_certificates": 7,
+      "covered_failure_certificates": 7,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2017,
+      "listed_failure_certificates": 5,
+      "covered_failure_certificates": 5,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2018,
+      "listed_failure_certificates": 0,
+      "covered_failure_certificates": 0,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2019,
+      "listed_failure_certificates": 5,
+      "covered_failure_certificates": 5,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2020,
+      "listed_failure_certificates": 3,
+      "covered_failure_certificates": 3,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2021,
+      "listed_failure_certificates": 0,
+      "covered_failure_certificates": 0,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2022,
+      "listed_failure_certificates": 2,
+      "covered_failure_certificates": 2,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2023,
+      "listed_failure_certificates": 3,
+      "covered_failure_certificates": 3,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2024,
+      "listed_failure_certificates": 3,
+      "covered_failure_certificates": 3,
+      "uncovered_certificates": []
+    },
+    {
+      "prediction_year": 2025,
+      "listed_failure_certificates": 2,
+      "covered_failure_certificates": 2,
+      "uncovered_certificates": []
+    }
+  ],
+  "target": "FDIC certificate failure before any nonfailure exit within (April 1, next April 1]; mergers/insurance exits are competing nonfailure outcomes, not borrower defaults.",
+  "revisions": "Current historical snapshot; original publication availability and historical revisions are not reconstructed."
+}

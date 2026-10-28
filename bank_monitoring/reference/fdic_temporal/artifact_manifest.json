@@ -1,0 +1,266 @@
+{
+  "source_freeze_commit": "231a09b18b7648c964a5e2e3bf5e458b8876ee74",
+  "source_freeze_tree": "8001a239ac7e699a5a5a378515c60f250d60cec4",
+  "frozen_source": [
+    {
+      "path": "src/fdic_temporal.py",
+      "bytes": 15675,
+      "sha256": "ba32db61251fd17ebb45f85202938fe1e8b531d0e9f946cd8ba17c6c352884f4",
+      "git_blob_sha": "cad379624a05ca1485cc918f9d449c3d0ed7debe"
+    },
+    {
+      "path": "collect_fdic_temporal.py",
+      "bytes": 5175,
+      "sha256": "1b291b27b07a39cf8416f75e67ed9e6bbbf1da43ef7c558be58cfd6eabc7b952",
+      "git_blob_sha": "9a1a8fc40e47a12cc05f94bd45b943b4c7b56715"
+    },
+    {
+      "path": "benchmark_fdic_temporal.py",
+      "bytes": 16168,
+      "sha256": "8fb69a9eef7a0afd41d8aadf359fde8846b7703b5640062bd53ce026a70267a6",
+      "git_blob_sha": "c7a73285c6761b79c4dc130b76bb86ca153e8892"
+    },
+    {
+      "path": "tests/test_fdic_temporal.py",
+      "bytes": 7003,
+      "sha256": "93d740cc875dfc83a9e733eaf42ff8d94e1bbec4325167af12365d313306ec06",
+      "git_blob_sha": "62c641a5017026487d117836d345441322044fb6"
+    },
+    {
+      "path": "reference/fdic_temporal/PROTOCOL.json",
+      "bytes": 3637,
+      "sha256": "5a63d52ee80a4ac593830e89bb56ddf280911b8c5c33187e14a69749ad12c1d2",
+      "git_blob_sha": "332272d9c4afcec8bcaa85052c850715f41cf5da"
+    },
+    {
+      "path": "reference/fdic_temporal/qualification_receipt.json",
+      "bytes": 2228,
+      "sha256": "d6a69de2505d28c3930c0c00bdc938ac30d95919224d34c8006502477bc55cc0",
+      "git_blob_sha": "08a4c36967c5f181a47019b6e57d4e0206e25fff"
+    },
+    {
+      "path": "requirements-fdic-temporal.txt",
+      "bytes": 75,
+      "sha256": "89effaef1a9c99b9eb2af1a0208084695df6f87ddba1cb9daa2e2263f7d56be2",
+      "git_blob_sha": "069d089ef88971af8196e3433daf06d66c78e291"
+    }
+  ],
+  "packaging_source": [
+    {
+      "path": "replay_fdic_temporal.py",
+      "bytes": 2120,
+      "sha256": "64464aa1ea7a6558c5b29485fe11bcad2e698865d8f6cdd161c5a268352e98cb"
+    },
+    {
+      "path": "audit_fdic_results.py",
+      "bytes": 5270,
+      "sha256": "d19295f89a2c79144b3a79d8ee124001726c2d827746398f8a34efff97023ee8"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "reference/fdic_temporal/cohort_diagnostics.csv",
+      "bytes": 10930,
+      "sha256": "88fbbd91cbd492c60d8583fc7916397b446a916ce035169e2fb51530e691a4c8"
+    },
+    {
+      "path": "reference/fdic_temporal/descriptive_audit.json",
+      "bytes": 23535,
+      "sha256": "7ecc95ca02993267fdaa89d15c3b3c943a47fbb8ffce6f548ee113a51c446f3d"
+    },
+    {
+      "path": "reference/fdic_temporal/eligibility_audit.json",
+      "bytes": 5479,
+      "sha256": "537d17e0903947d424fc7a91df226f57eab9fd4545a5c5f8a9cb35ae15559ef5"
+    },
+    {
+      "path": "reference/fdic_temporal/failure_cases.csv",
+      "bytes": 8392,
+      "sha256": "e753f2d8e73f228086274b6d4ca19f5f2ab43fbaa51c0218689364de9732627a"
+    },
+    {
+      "path": "reference/fdic_temporal/failures.json.gz",
+      "bytes": 37396,
+      "sha256": "d8ad555bc8ce49d62198e47506d5556e238d507cdb6bacd55df71903583b3799"
+    },
+    {
+      "path": "reference/fdic_temporal/institutions.json.gz",
+      "bytes": 341580,
+      "sha256": "9c5562c8072645da558dae032b4e4d6c1c021c264fe502ff5907fccfbcc63406"
+    },
+    {
+      "path": "reference/fdic_temporal/selection_trials.csv",
+      "bytes": 533,
+      "sha256": "de950098f13743fd9d4202b591c06b270a9fcc81331fea64b5c2eda026f7da1d"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/1992.json.gz",
+      "bytes": 920672,
+      "sha256": "e483ac4ab986c1a6662dd216fa045c15c935c52a1df97ca3f1b59202c01c6c2e"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/1993.json.gz",
+      "bytes": 878235,
+      "sha256": "4f0254f04f3be6b7149e74188581c75bddbc16e82d1b1cd6b29434f50d28c197"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/1994.json.gz",
+      "bytes": 831942,
+      "sha256": "582c5bbbfc848fb4940425d26b520e21b445de700d04b16178b4a0d5c87c63b4"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/1995.json.gz",
+      "bytes": 791472,
+      "sha256": "61046e69c292393c6971f11cd83ad5b2a79c99dc1e092b391925a553e9dbe806"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/1996.json.gz",
+      "bytes": 757398,
+      "sha256": "6bd9be9e747b9a122eaa89a7744a180681b12771d9322fa65ca5771386e6848d"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/1997.json.gz",
+      "bytes": 722008,
+      "sha256": "16c210cf1e0c9f8c30178210f966430bc8eb28b945d9e5f3b011061c873c20ab"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/1998.json.gz",
+      "bytes": 691661,
+      "sha256": "6342b06087b3781c81ffd5209c269cc6ccc9c6e8781742053cd83608ac6866b1"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/1999.json.gz",
+      "bytes": 673842,
+      "sha256": "7b94c625f10a6cd0b486bc9df4844dc49745af13b277ed0a87478a7605d0f4f2"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2000.json.gz",
+      "bytes": 652225,
+      "sha256": "26386d186448db20792f99e9094ad8ed197351b5d7f0f9e7fc3256a42a954fee"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2001.json.gz",
+      "bytes": 636606,
+      "sha256": "8392463f531c4387e02a7eb4e5e48e03fe7a17579ce2c1c92bea4346455bc4a0"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2002.json.gz",
+      "bytes": 619070,
+      "sha256": "ced136c0f691a67431730baff311de9815999ef0e7493febac06999e05a4e551"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2003.json.gz",
+      "bytes": 608379,
+      "sha256": "3954685a8d27a09d9a99eaf89592eb2304db4d14165b914917ea419a34f36506"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2004.json.gz",
+      "bytes": 593350,
+      "sha256": "7a3a3ed7959f1b6fee806110a23c849d250f9abd226786e81406ce71832db9a8"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2005.json.gz",
+      "bytes": 582820,
+      "sha256": "7a449f49d6d44b0c6615003db999d3fc9cd800d48b4e1dd44a1e39b1553b2ab2"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2007.json.gz",
+      "bytes": 564451,
+      "sha256": "f60ce6230b00ec880c245cc748dfcaa535d3f12e9e3fd6a2e3f88259ff9bdb4e"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2008.json.gz",
+      "bytes": 553499,
+      "sha256": "7801d4b02628e462756556c3b3e81342b83ba59093fca23b05fe780e55eee62d"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2010.json.gz",
+      "bytes": 513741,
+      "sha256": "b06b6f097754587ecf18ee8b4bb5e3338e18f8f64d964b270a1138060a24f123"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2012.json.gz",
+      "bytes": 475194,
+      "sha256": "aa9d9cecde082a80dba82674ed0fb086fd3be6d57607859b699bf9a78f0ee140"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2014.json.gz",
+      "bytes": 434958,
+      "sha256": "6036645af8d9d34a230e958dcffd86e1ded2a9c2d517dae5848e8f9c321bdca5"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2015.json.gz",
+      "bytes": 412070,
+      "sha256": "e11bffea0d750c2213daacfa66796680b5e842d07191e7348088ec2d8287437a"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2016.json.gz",
+      "bytes": 393129,
+      "sha256": "aa781b86463d6caf1ec01f986285e213a1e8fb51a58afcd544e29de323963b1b"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2017.json.gz",
+      "bytes": 376666,
+      "sha256": "405f386e06276a0c845d8d57234a89c21bb639924f82a5a0f6bf97dbc1c84494"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2018.json.gz",
+      "bytes": 358329,
+      "sha256": "c47ff24a3d644a02c70a645ab57b79954a62af25ed2aee0b7c5dd4b3f1ead391"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2019.json.gz",
+      "bytes": 342730,
+      "sha256": "30052ff3c38a3fba242e597876c3ba62bc3cf950fd414ea836733b0da022c7aa"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2020.json.gz",
+      "bytes": 332117,
+      "sha256": "63016a6cdff31278224e92d35296507c5043ea82106c4254025a31e30f3dc25b"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2021.json.gz",
+      "bytes": 320780,
+      "sha256": "ef32c42baaa314cf4ff5342bc74051bc2f59f2b64a4baf37fe7b664a395e700f"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2022.json.gz",
+      "bytes": 310013,
+      "sha256": "9cadb4a675ffbf9cbca47a7ab4828ccbe0f3544974218dbb9e74a3b6ec56e8e2"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2023.json.gz",
+      "bytes": 304293,
+      "sha256": "ac651696a2b4fc2b0b6270b174ef8990efbf068abe0add4e955803c5ae212949"
+    },
+    {
+      "path": "reference/fdic_temporal/source_financials/2024.json.gz",
+      "bytes": 298114,
+      "sha256": "3f1c377147b28e899dd134145fe345959dac08274f2c416cf36f75a2992c6134"
+    },
+    {
+      "path": "reference/fdic_temporal/source_snapshot.json",
+      "bytes": 36517,
+      "sha256": "cc39f706c40c55fce57721134da5cc4b480caa95ec9e32f7ebf46b4dce0810a3"
+    },
+    {
+      "path": "reference/fdic_temporal/summary.json",
+      "bytes": 9081,
+      "sha256": "7338b99b06e15f0ba55fc0b449d86c8d43a446fc63b471b5de9faf5fb4942e36"
+    },
+    {
+      "path": "reference/fdic_temporal/test_predictions.csv.gz",
+      "bytes": 3034127,
+      "sha256": "2b27dd1395549d6123428ac9f438830cfd9cc61adb583beb8fd0c4a6fee85108"
+    }
+  ],
+  "prediction_csv": {
+    "path": "reference/fdic_temporal/test_predictions.csv",
+    "bytes": 10432670,
+    "sha256": "2b1bebfd12eba0febd540a0566486ca18e751a923085e25ee9dc37155a1f6a62",
+    "compressed_path": "reference/fdic_temporal/test_predictions.csv.gz"
+  },
+  "changes_after_first_evaluation": "Lossless gzip packaging/replay wrapper, descriptive all-case audit, workflow invoking wrapper, raw-CSV gitignore, and documentation only. No estimator, features, split years, calibrator, candidate grid, monitoring weights or final cases changed.",
+  "source_proof": "Protocol and fitting/source/metric code published and remotely hash-verified before data fitting. Snapshot values are current historical revisions, not original vintages.",
+  "source_attribution": "FDIC BankFind public data. Implementation MIT licence does not invent a licence or endorsement for source material."
+}

@@ -1,0 +1,279 @@
+{
+  "protocol_sha256": "5a63d52ee80a4ac593830e89bb56ddf280911b8c5c33187e14a69749ad12c1d2",
+  "source_snapshot_sha256": "cc39f706c40c55fce57721134da5cc4b480caa95ec9e32f7ebf46b4dce0810a3",
+  "population": {
+    "development": {
+      "rows": 148144,
+      "certificates": 15637,
+      "failure_events": 105,
+      "nonfailure_exits": 7143,
+      "first_prediction": "1993-04-01",
+      "last_prediction": "2006-04-01",
+      "latest_horizon": "2007-04-01"
+    },
+    "selection": {
+      "rows": 16649,
+      "certificates": 8530,
+      "failure_events": 204,
+      "nonfailure_exits": 439,
+      "first_prediction": "2008-04-01",
+      "last_prediction": "2009-04-01",
+      "latest_horizon": "2010-04-01"
+    },
+    "calibration": {
+      "rows": 7561,
+      "certificates": 7561,
+      "failure_events": 82,
+      "nonfailure_exits": 182,
+      "first_prediction": "2011-04-01",
+      "last_prediction": "2011-04-01",
+      "latest_horizon": "2012-04-01"
+    },
+    "policy": {
+      "rows": 7003,
+      "certificates": 7003,
+      "failure_events": 25,
+      "nonfailure_exits": 261,
+      "first_prediction": "2013-04-01",
+      "last_prediction": "2013-04-01",
+      "latest_horizon": "2014-04-01"
+    },
+    "test": {
+      "rows": 57896,
+      "certificates": 6477,
+      "failure_events": 35,
+      "nonfailure_exits": 2157,
+      "first_prediction": "2015-04-01",
+      "last_prediction": "2025-04-01",
+      "latest_horizon": "2026-04-01"
+    }
+  },
+  "development_rows_equal_for_full_models": true,
+  "registered_candidates_per_full_model": 3,
+  "selected": {
+    "logistic": 0.1,
+    "hist_gradient_boosting": 7
+  },
+  "calibration": {
+    "logistic": {
+      "intercept": 3.3403165234293826,
+      "slope": 1.2807327705155496,
+      "penalty": 1e-06
+    },
+    "hist_gradient_boosting": {
+      "intercept": 1.2795420246323477,
+      "slope": 1.2503052008430302,
+      "penalty": 1e-06
+    }
+  },
+  "test_metrics": {
+    "constant": {
+      "brier": 0.000604177670964714,
+      "log_loss": 0.005092648228989902,
+      "weighted_cost_per_row": 0.06045322647505873,
+      "auc": 0.5,
+      "average_precision": 0.0006045322647505873,
+      "threshold": 1.0000000000000002,
+      "policy_selection_cost": 2500.0,
+      "test_monitor_count": 0,
+      "test_caught_failures": 0,
+      "test_missed_failures": 35
+    },
+    "capital_only": {
+      "brier": 0.0006040825584902696,
+      "log_loss": 0.005026119033297853,
+      "weighted_cost_per_row": 0.05095343374326378,
+      "auc": 0.9189036780264034,
+      "average_precision": 0.027756209243049647,
+      "threshold": 0.0007582155933582289,
+      "policy_selection_cost": 254.0,
+      "test_monitor_count": 1470,
+      "test_caught_failures": 20,
+      "test_missed_failures": 15
+    },
+    "logistic_raw": {
+      "brier": 0.0005975114916846253,
+      "log_loss": 0.004227011038180993,
+      "weighted_cost_per_row": 0.03673828934641426,
+      "auc": 0.8380601787041357,
+      "average_precision": 0.052297494482659766,
+      "threshold": 0.0032041661921832637,
+      "policy_selection_cost": 879.0,
+      "test_monitor_count": 445,
+      "test_caught_failures": 18,
+      "test_missed_failures": 17
+    },
+    "logistic_calibrated": {
+      "brier": 0.0006356473328584902,
+      "log_loss": 0.005461052482136816,
+      "weighted_cost_per_row": 0.03673828934641426,
+      "auc": 0.8380601787041356,
+      "average_precision": 0.052297494482659766,
+      "threshold": 0.01778927616981034,
+      "policy_selection_cost": 879.0,
+      "test_monitor_count": 445,
+      "test_caught_failures": 18,
+      "test_missed_failures": 17
+    },
+    "hist_gradient_boosting_raw": {
+      "brier": 0.0005556345586661423,
+      "log_loss": 0.0031963274072855244,
+      "weighted_cost_per_row": 0.028654829349177836,
+      "auc": 0.9155463709826752,
+      "average_precision": 0.14904756158454302,
+      "threshold": 0.004718241082406701,
+      "policy_selection_cost": 278.0,
+      "test_monitor_count": 381,
+      "test_caught_failures": 22,
+      "test_missed_failures": 13
+    },
+    "hist_gradient_boosting_calibrated": {
+      "brier": 0.0005562342756538113,
+      "log_loss": 0.0032307681564416883,
+      "weighted_cost_per_row": 0.028654829349177836,
+      "auc": 0.9155463709826752,
+      "average_precision": 0.14904756158454302,
+      "threshold": 0.004444743229878203,
+      "policy_selection_cost": 278.0,
+      "test_monitor_count": 381,
+      "test_caught_failures": 22,
+      "test_missed_failures": 13
+    }
+  },
+  "paired_uncertainty": {
+    "CERT": {
+      "resampling_unit": "CERT",
+      "groups": 6477,
+      "replicates": 500,
+      "direction": "challenger_minus_full_logistic",
+      "metrics": {
+        "brier": {
+          "observed_difference": -7.94130572046789e-05,
+          "valid_replicates": 500,
+          "percentile_95": [
+            -0.0001651656064978704,
+            -1.0190133034651026e-05
+          ]
+        },
+        "log_loss": {
+          "observed_difference": -0.0022302843256951275,
+          "valid_replicates": 500,
+          "percentile_95": [
+            -0.002689368323148387,
+            -0.0017568845573666255
+          ]
+        },
+        "weighted_cost_per_row": {
+          "observed_difference": -0.008083459997236423,
+          "valid_replicates": 500,
+          "percentile_95": [
+            -0.018128510317407486,
+            0.0012887292351185145
+          ]
+        },
+        "auc": {
+          "observed_difference": 0.07748619227853959,
+          "valid_replicates": 500,
+          "percentile_95": [
+            0.018456324213895866,
+            0.153540218966504
+          ]
+        },
+        "average_precision": {
+          "observed_difference": 0.09675006710188325,
+          "valid_replicates": 500,
+          "percentile_95": [
+            0.009473783323119739,
+            0.21959319074914624
+          ]
+        }
+      },
+      "scope": "Separate bank and annual-cohort sensitivity intervals; neither resampling scheme jointly models all dependence or proves prospective reliability."
+    },
+    "prediction_date": {
+      "resampling_unit": "prediction_date",
+      "groups": 11,
+      "replicates": 500,
+      "direction": "challenger_minus_full_logistic",
+      "metrics": {
+        "brier": {
+          "observed_difference": -7.94130572046789e-05,
+          "valid_replicates": 500,
+          "percentile_95": [
+            -0.00015580510803926066,
+            -1.6844982459699817e-05
+          ]
+        },
+        "log_loss": {
+          "observed_difference": -0.0022302843256951275,
+          "valid_replicates": 500,
+          "percentile_95": [
+            -0.0028272190001821943,
+            -0.001535425689883826
+          ]
+        },
+        "weighted_cost_per_row": {
+          "observed_difference": -0.008083459997236423,
+          "valid_replicates": 500,
+          "percentile_95": [
+            -0.013807674924191077,
+            -0.002234773405734666
+          ]
+        },
+        "auc": {
+          "observed_difference": 0.07748619227853959,
+          "valid_replicates": 500,
+          "percentile_95": [
+            0.031383112843548805,
+            0.14772453591189694
+          ]
+        },
+        "average_precision": {
+          "observed_difference": 0.09675006710188325,
+          "valid_replicates": 500,
+          "percentile_95": [
+            0.014307824176884658,
+            0.23824317739324283
+          ]
+        }
+      },
+      "scope": "Separate bank and annual-cohort sensitivity intervals; neither resampling scheme jointly models all dependence or proves prospective reliability."
+    }
+  },
+  "test_nonfailure_monitor_none_cost_per_row": 0.06045322647505873,
+  "test_monitor_all_cost_per_row": 0.9993954677352495,
+  "test_missing_fraction": {
+    "equity_to_assets": 0.0017099626917230896,
+    "loans_to_assets": 0.0,
+    "deposits_to_assets": 0.0,
+    "cash_to_assets": 0.0,
+    "securities_to_assets": 0.0,
+    "nonperforming_assets_fraction": 0.0,
+    "return_on_assets_fraction": 0.0,
+    "net_interest_margin_fraction": 0.0,
+    "log_assets": 0.0
+  },
+  "test_prevalence": 0.0006045322647505873,
+  "development_prevalence": 0.0007087698455556755,
+  "limitations": [
+    "Current historical revisions, not original information vintages",
+    "Assumed April 1 availability, not verified publication time",
+    "Institutional failure with competing nonfailure exits, not borrower PD",
+    "Annual observation cadence; rare later-regime failures",
+    "Repeated certificates across roles are intentional, not unseen-bank validation",
+    "Bank and annual-cohort bootstrap are separate dependence sensitivities",
+    "Fixed small candidate grid; not a claim of global model optimality",
+    "Illustrative monitoring weights/capacity, no observed financial benefit"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "seconds": 13.70607297000015,
+    "api_cash_spend": 0,
+    "cpu_electricity_unpriced": true
+  },
+  "test_predictions_sha256": "2b1bebfd12eba0febd540a0566486ca18e751a923085e25ee9dc37155a1f6a62"
+}

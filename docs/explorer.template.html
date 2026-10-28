@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Bank-risk validation: why strong pooled ranking did not make a frozen monitoring rule reliable in later cohorts.">
+<title>Bank-risk validation | Prasanna K</title>
+<style>__STYLE__</style>
+</head>
+<body>
+<header>
+<nav aria-label="Primary"><a class="brand" href="https://github.com/Prasanna-K-123">Prasanna K</a><div><a href="https://github.com/Prasanna-K-123/credit-risk-model-validation">Source &amp; reproduction</a><a href="https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html">Portfolio</a></div></nav>
+<p class="eyebrow">Model validation · public FDIC data · retrospective research</p>
+<h1>Strong pooled ranking.<br>A weak later monitoring rule.</h1>
+<p class="lead">A bank-risk study that separates a model's statistical score from the decision it is supposed to support. Frozen fits, every failure case, and a second implementation of the validation checks.</p>
+<div class="warning"><strong>The calibrated boosting rule missed 9 of 10 failures in the later 2022–2025 prediction cohorts.</strong> Its pooled ROC AUC was 0.916. The later slice is a post-hoc diagnostic, not a new untouched test. The evidence supports a research restriction, not live monitoring approval.</div>
+<div class="links"><a href="https://github.com/Prasanna-K-123/credit-risk-model-validation/blob/main/reports/DECISION_MEMO.md">Decision memo ↗</a><a href="https://github.com/Prasanna-K-123/credit-risk-model-validation/blob/main/reports/VALIDATION_REPORT.md">Technical validation ↗</a><a href="https://github.com/Prasanna-K-123/credit-risk-model-validation/blob/main/docs/REPRODUCE.md">Reproduce the study ↗</a></div>
+</header>
+<main>
+<noscript><p class="warning">The headline and linked reports are available without JavaScript. Enable JavaScript to filter the cohorts and inspect all failure cases.</p></noscript>
+<section class="section" aria-labelledby="explore-title">
+<div class="section-title"><h2 id="explore-title">Inspect the decision, cohort by cohort</h2><span class="small muted">57,896 final observations · 35 failures · 11 annual cohorts</span></div>
+<p class="muted">Compare the development-rate baseline, a capital-only model, and two full model families before and after calibration. Each monitoring threshold was fixed on the separate policy cohort. Filtering here does not refit, retune, or create a new validation set.</p>
+<div class="filters"><label>Model<select id="model" aria-label="Model"></select></label><label>Cohorts<select id="cohort" aria-label="Cohorts"><option value="all">All final cohorts (2015–2025)</option><option value="late">Later diagnostic (2022–2025)</option></select></label></div>
+<p id="overall" class="kpi-line"></p>
+<div id="cards" class="cards" aria-live="polite"></div>
+<div class="chart"><div class="legend"><span>Observed failures</span><span class="expected">Sum of predicted probabilities</span></div><div id="bars" role="img" aria-label="Observed and expected failures by annual prediction cohort"></div></div>
+<div class="table-wrap"><table><caption>Full cohort accounting. “Top 1%” means ceil(1% × cohort size), with certificate ID breaking score ties.</caption><thead><tr><th>Prediction year</th><th class="numeric">Banks</th><th class="numeric">Failures</th><th class="numeric">Expected</th><th class="numeric">Monitored</th><th class="numeric">Caught</th><th class="numeric">Missed</th><th class="numeric">Top 1% caught</th></tr></thead><tbody id="annual"></tbody></table></div>
+</section>
+<section class="section" aria-labelledby="cases-title">
+<div class="section-title"><h2 id="cases-title">Every failed-bank case stays visible</h2><span id="case-count" class="small muted"></span></div>
+<p class="muted">These historical FDIC certificate identifiers are public data, not ratings of current institutions. Scores refer to the dated research snapshot. A low score is not evidence that a bank was safe.</p>
+<div class="table-wrap"><table><thead><tr><th>Certificate</th><th>Prediction date</th><th>Failure date</th><th class="numeric">Probability</th><th>Fixed rule</th><th>Top 1%</th></tr></thead><tbody id="cases"></tbody></table></div>
+</section>
+<section class="section" aria-labelledby="review-title"><h2 id="review-title">What the validation concludes</h2>
+<div class="grid"><div class="box"><h3>Research use only</h3>
+<p>Model selection, calibration and policy selection used separate, purged periods. That protects the comparison from using final outcomes to choose the winner. It does not establish prospective availability, a stable future regime, or the value of an intervention.</p>
+<p>The calibrated booster improves pooled Brier loss against calibrated logistic regression. The illustrative cost difference has a bank-bootstrap interval that crosses zero; annual-cohort resampling tells a different story. Both are reported.</p><div id="intervals"></div></div>
+<div class="box"><h3>Explicit review triggers</h3><span class="badge" id="status"></span><div id="findings"></div>
+<p class="small muted">Added after the original study as transparent review examples. PSI and recall thresholds are illustrative, not regulatory standards or a newly preregistered decision rule. Missing evidence prevents a passing review.</p></div></div>
+</section>
+<section class="section"><h2>A complete, bounded source-to-result route</h2>
+<div class="timeline"><div><strong>Development</strong><span>Reports 1992–2005<br>Fit preprocessing and models</span></div><div><strong>Selection</strong><span>Reports 2007–2008<br>Choose fixed candidates</span></div><div><strong>Calibration</strong><span>Report 2010<br>Monotone probability mapping</span></div><div><strong>Policy</strong><span>Report 2012<br>Fix monitoring rule</span></div><div><strong>Final evaluation</strong><span>Reports 2014–2024<br>No reselection or refit</span></div></div>
+<p class="small muted">Each December report is assumed usable the next April 1. The following one-year outcome horizon is separated by purged years at role boundaries. Repeated bank certificates across time are intentional; this is not unseen-bank validation.</p>
+<details><summary>Data, limitations and execution evidence</summary>
+<p>237,253 eligible bank-year observations are rebuilt from 29 annual financial extracts plus institution and failure records. Public frozen source objects and the full prediction file are checksum-verified before reuse. Seven registered fits, two monotone calibrators, policy thresholds, paired bank/year bootstrap and the all-case audit are actually replayed.</p>
+<p>Current historical source revisions are not original information vintages. Three-month report availability is assumed. Failure with competing nonfailure exits is not borrower PD, LGD, expected credit loss or IFRS 9 compliance. Rare events, annual cadence, nominal bank-size features and dependence across banks/years limit interpretation. No realized savings, bank deployment or regulatory endorsement is claimed.</p>
+<p>Original source, protocol and historical results remain frozen. The independent review added on 28 October 2026 checks metrics, every cohort, all failed-bank cases and feature drift. The <a href="https://github.com/Prasanna-K-123/credit-risk-model-validation/blob/main/reports/execution_receipt.json">execution receipt</a> records the actual run and environment.</p>
+<pre>python -m venv .venv
+# Activate the environment, then:
+python -m pip install -r requirements.txt
+python -m pytest -q
+python scripts/reproduce.py</pre>
+</details></section>
+</main>
+<footer>Prasanna K · Bank-risk model validation · Historical research, not a production monitoring service. <a href="https://github.com/Prasanna-K-123/credit-risk-model-validation/blob/main/RESEARCH_HISTORY.md">Research history</a></footer>
+<script id="evidence" type="application/json">__EVIDENCE_JSON__</script>
+<script>__SCRIPT__</script>
+</body></html>
